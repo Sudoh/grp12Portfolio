@@ -1,1 +1,1 @@
-//Java Script
+/* Grupp 12 JavaScript */
