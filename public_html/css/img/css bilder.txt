@@ -1,0 +1,3 @@
+Här lägger vi bilder som anropas från CSS. 
+
+url blir då (img/bildensnamn) och på så sätt blandas inte dessa bilder ihop med bilder vi använder på hemsidan för tex bildspel m.m.
