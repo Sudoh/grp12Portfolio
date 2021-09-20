@@ -1,1 +1,1 @@
-Här lägger vi filer som anropas med ajax
+Här lägger vi filer som anropas med ajax.

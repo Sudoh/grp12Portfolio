@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projekten>
+    <projekt id="p1">
+    <namn>...</namn>
+    <projektLedare>...</projektLedare>
+    <projektBudget>...</projektBudget>
+    <kundNamn>...</kundNamn>
+    <startDatum>...</startDatum>
+    <slutDatum>...</slutDatum>
+    <bildURL id="bild1">...</bildURL>
+    <bildURL id="bild2">...</bildURL>
+    <bildURL id="bild3">...</bildURL>
+    <projektBeskrivning>...</projektBeskrivning>
+    </projekt>
+
+ 
+</projekten>
