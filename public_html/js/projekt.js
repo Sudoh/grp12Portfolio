@@ -1,39 +1,21 @@
-$(document).ready(function(){
 
-
-function getTheBooks() {
     $.ajax({
+        type: "GET",
+        url: "/xml/projekt.xml",
+        dataType: "xml",
+        success: function (xml) {
+            $(xml).find("projekt").each(function(index, projekt) {
+                
 
-        method: 'GET',
-        url: '../xml/projekt.xml',
-        datatype: 'xml',
+                $('#projekt').append('<div>' + $(this).find("namn").text() + '</div>');
 
-    }).done(function (data) {
-        $.each(data, function (index, bokens) {
+            })
 
-            $('#bookList').append(
-                '<tr id=bok' + index + '><td>' + bokens.title +
-                '</td><td>' + bokens.author +
-                '</td><td>' + bokens.year_written +
-                '</td><td>' + bokens.edition +
-                '</td><td>' + bokens.price +
-                '</td><td><button id="buy' + index + '" title="buy' + index + '">⭐</button></tr>'
-            );
+        },
 
-            //Fångar köp kanppen per rad
-            $('#buy' + index).on('click', function () {
-
-                //Skickar med bokens titel och bokens pris som argument till funktionen
-                laggTillKorgen(bokens.title, bokens.price, index);
-                var bok = $('[id=bok' + index + ']');
-                bok.fadeOut(10);
-
-            });
-
-
+        error: function() {
+        alert("The XML File could not be processed correctly.");
+        }
         });
-    });
 
-}; //Stänger getTheBooks
 
-});
