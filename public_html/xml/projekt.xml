@@ -2,17 +2,54 @@
 <projekten>
 
     <projekt id="p1">
-    <namn>...</namn>
-    <projektLedare>...</projektLedare>
-    <projektBudget>...</projektBudget>
-    <kundNamn>...</kundNamn>
-    <startDatum>...</startDatum>
-    <slutDatum>...</slutDatum>
-    <bildURL id="bild1">...</bildURL>
-    <bildURL id="bild2">...</bildURL>
-    <bildURL id="bild3">...</bildURL>
-    <projektBeskrivning>...</projektBeskrivning>
+        <namn>Men in Black</namn>
+        <projektLedare>Urban Bollerplank</projektLedare>
+        <uppdragsgivare>Men In Black Örebro</uppdragsgivare>
+        <startDatum>2021-01-01</startDatum>
+        <slutDatum>2021-05-30</slutDatum>
+        <bildURL id="bild1">projektbild1.jpg</bildURL>
+        <projektBeskrivning>På uppdrag av MIB Örebro tog en applikation fram för att hjälpa organisationen att hålla reda på de aliens och agenter som är verksamma på jorden. </projektBeskrivning>
     </projekt>
 
- 
+    <projekt id="p2">
+        <namn>Flappy Bird 2.0</namn>
+        <projektLedare>Susanna Sunesdottir</projektLedare>
+        <uppdragsgivare>Flappy corporation</uppdragsgivare>
+        <startDatum>2021-02-01</startDatum>
+        <slutDatum>2021-03-25</slutDatum>
+        <bildURL id="bild2">projektbild2.png</bildURL>
+        <projektBeskrivning>Flappy Bird 3d. Release date 2021 Q4.</projektBeskrivning>
+    </projekt>
+
+    <projekt id="p3">
+        <namn>Portfolio de Lux</namn>
+        <projektLedare>Orvar Ravro</projektLedare>
+        <uppdragsgivare>Örebro Universistet</uppdragsgivare>
+        <startDatum>2021-09-01</startDatum>
+        <slutDatum>2021-09-28</slutDatum>
+        <bildURL id="bild3">projektbild3.jpg</bildURL>
+        <projektBeskrivning>Skapa en Portfolio för att visa ett smakprov av våra arbeten genom tiden</projektBeskrivning>
+    </projekt>
+
+    <projekt id="p4">
+        <namn>Projekt 4</namn>
+        <projektLedare>Projektladre Projektsson</projektLedare>
+        <uppdragsgivare>Kunden AB</uppdragsgivare>
+        <startDatum>2021-01-01</startDatum>
+        <slutDatum>2021-01-31</slutDatum>
+        <bildURL id="bild4">projektbild4.png</bildURL>
+        <projektBeskrivning>Projekt 4 är en projekt om projekt som projekt.</projektBeskrivning>
+    </projekt>
+
+    <projekt id="p5">
+        <namn>Projekt numero 5</namn>
+        <projektLedare>Projecto Projextare</projektLedare>
+        <uppdragsgivare>Sinseri LTD</uppdragsgivare>
+        <startDatum>2021-09-30</startDatum>
+        <slutDatum>pågående...</slutDatum>
+        <bildURL id="bild5">projektbild5.png</bildURL>
+        <projektBeskrivning>Vårt senaste projekt som startar i slutet av september.</projektBeskrivning>
+    </projekt>
+
+
 </projekten>
