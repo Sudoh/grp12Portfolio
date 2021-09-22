@@ -1,4 +1,56 @@
+$(document).ready(function () {
 
+        $('#nastaProjekt').on('click', function (e) {
+            e.preventDefault();
+            getNastaProjekt();
+            
+        });
+
+        
+        function getNastaProjekt(){
+            console.log("Klickat på nästa");
+
+            //Ta bort nuvarande projekt
+            $('#projektInfo').remove();
+            //Hämta nästa projekt
+            getEnProjekt();
+
+        };
+
+
+        //Hämta en projekt
+        function getEnProjekt(){
+
+            $.ajax({
+
+                type: "GET",
+                url: "/xml/projekt.xml",
+                dataType: "xml",
+                beforeSend: function () {
+                    //Här kan vi lägga en laddar icon/gif
+                },
+                complete: function (){
+                    //kod för att ta bort laddningsiconen efter att data har hämtats.
+                },
+                success: function(data){
+                    //Kod som körs när xml filen är laddad. 
+                     $('#projekt').text('Det här var svårt =( jag behöver vila lite');
+                },
+                error: function(){
+                    //kod som körs vid ev. fel
+                    alert('Något har gått fel, troligen sökvägen till xml-filen.');
+                }  
+            
+            }); //ständer ajax
+
+        
+
+        };
+
+
+
+    //Hämtar alla projekt som finns i filen
+    function getAllaProjekt() { 
     $.ajax({
         type: "GET",
         url: "/xml/projekt.xml",
@@ -25,5 +77,6 @@
         alert("The XML File could not be processed correctly.");
         }
         });
+    };
 
-
+}); //Stänger Ready
