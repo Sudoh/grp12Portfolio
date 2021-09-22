@@ -1,9 +1,31 @@
 * {
-    padding:0;
-    margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-div {
-    border: 1px solid #000;
+html, body {
+    width: 100%; 
+    height: auto;
+    background-color: deepskyblue;
+}
 
+div.projekt { 
+    border:5px solid #000;
+    max-width: 768px;
+    height:auto;
+    background-color: crimson;
+}
+
+div.projektInfo { 
+    background-color: goldenrod;
+    max-width: 768px;
+    height: auto;
+    margin:10px;
+
+}
+
+div.projektInfo img {
+  max-width: 200px;
+  height: auto;
+  float:right;
 }
