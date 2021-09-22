@@ -3,29 +3,71 @@
   margin: 0;
 }
 
-html, body {
-    width: 100%; 
-    height: auto;
-    background-color: deepskyblue;
+/* TEXT CSS */
+.pHeading { 
+    font-weight: bold;
+    color: chartreuse;
 }
 
+h1.projektNamn {
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+.projektInfo p {
+color: cornsilk;
+padding-bottom: 1em;
+}
+
+/* LAYOUT CSS MOBILE*/
+
 div.projekt { 
+    float: left;
+    width: auto;
     border:5px solid #000;
-    max-width: 768px;
-    height:auto;
+    height: auto;
     background-color: crimson;
 }
 
 div.projektInfo { 
-    background-color: goldenrod;
-    max-width: 768px;
+    width: 80%;
     height: auto;
-    margin:10px;
+    padding: 0;
+    margin: 10%;
+    background-color: darkred;
+    text-align: left;
 
 }
 
+/* BILDER CSS */
+
 div.projektInfo img {
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
   float:right;
 }
+
+/* RESPONSIV LAYOUT BIG SCREEN*/
+
+@media screen and (min-width: 768px) {
+
+    div.projekt { 
+        width: auto;
+        height: auto;
+        border:5px solid #000;
+        background-color: blueviolet;
+    }
+
+    div.projektInfo { 
+        background-color: goldenrod;
+        width: 30%;
+        min-height: 700px; /*minsta höjd på rutan för att säkerställa layout */
+        height: auto;
+        float: left;
+        margin: 3% 0 0 2.5%;
+        padding:0;
+    
+    }
+
+}
+
