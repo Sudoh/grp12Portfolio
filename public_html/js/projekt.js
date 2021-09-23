@@ -13,29 +13,39 @@ $(document).ready(function () {
     });
 
     function ritaProjektDiv(x) {
+
+        $('#projekt').prepend('<div class="loading"><img src="bilder/projekt/loading.gif" />');
         //behöver veta vilken projekt det gäller
         console.log(x);
-        //Rita upp projektinfo
-        if (x < $projektNr.length) {
-            // Ta bort nuvarande projekt
-            $('.projektInfo').remove();
 
-            //Ritar upp en div för projektet. För att justa utseende, ändra raderna nedan.
-            $('#projekt').prepend('<div class="projektInfo" id=' + $projektNr[x].id + '>' +
-                '<div class="projektNamn"><h1 class="projektNamn">' + $projektNr[x].namn + '</h1></div>' +
-                '<div class="projektBild"><img src="/bilder/projekt/' + $projektNr[x].bild + '" alt="' + $projektNr[x].bild + '"/></div>' +
-                '<div class="projektLedare"><p><span class="pHeading">Projektledare: </span>' + $projektNr[x].projektLedare + '</p></div>' +
-                '<div class="uppdragsgivare"><p><span class="pHeading">Uppdragsgivare: </span>' + $projektNr[x].uppdragsGivare + '</p></div>' +
-                '<div class="startDatum"><p><span class="pHeading">Startdatum: </span>' + $projektNr[x].startDatum + '</p></div>' +
-                '<div class="slutDatum"><p><span class="pHeading">Slutdatum: </span>' + $projektNr[x].slutDatum + '</p></div>' +
-                '<div class="projektBeskrivning"><p><span class="pHeading">Projektbeskrivning: </span>' + $projektNr[x].beskrivning + '</p></div>' +
-                '</div>');
-            klick++;
-        } else {
-            console.log('nått slutet, börjar om');
-            klick = 0;
-            ritaProjektDiv(klick);
-        }
+        //Lägger en timeout på någon sekund för att få till en loadingbild.
+        setTimeout(function () {
+            //Rita upp projektinfo
+            if (x < $projektNr.length) {
+                // Ta bort nuvarande projekt
+                // $('.projektInfo').remove();
+                $('.loading').remove();
+                $('.projektInfo').remove();
+
+                //Ritar upp en div för projektet. För att justa utseende, ändra raderna nedan.
+                $('#projekt').prepend('<div class="projektInfo" id=' + $projektNr[x].id + '>' +
+                    '<div class="projektNamn"><h1 class="projektNamn">' + $projektNr[x].namn + '</h1></div>' +
+                    '<div class="projektBild"><img src="/bilder/projekt/' + $projektNr[x].bild + '" alt="' + $projektNr[x].bild + '"/></div>' +
+                    '<div class="projektLedare"><p><span class="pHeading">Projektledare: </span>' + $projektNr[x].projektLedare + '</p></div>' +
+                    '<div class="uppdragsgivare"><p><span class="pHeading">Uppdragsgivare: </span>' + $projektNr[x].uppdragsGivare + '</p></div>' +
+                    '<div class="startDatum"><p><span class="pHeading">Startdatum: </span>' + $projektNr[x].startDatum + '</p></div>' +
+                    '<div class="slutDatum"><p><span class="pHeading">Slutdatum: </span>' + $projektNr[x].slutDatum + '</p></div>' +
+                    '<div class="projektBeskrivning"><p><span class="pHeading">Projektbeskrivning: </span>' + $projektNr[x].beskrivning + '</p></div>' +
+                    '</div>');
+                klick++;
+
+            } else {
+                console.log('nått slutet, börjar om');
+                klick = 0;
+                $('.loading').remove();
+                ritaProjektDiv(klick);
+            };
+        }, 200); //Ändra här för loading timeout i millisekunder
     };
 
 
@@ -48,18 +58,8 @@ $(document).ready(function () {
             url: "/xml/projekt.xml",
             dataType: "xml",
 
-            beforeSend: function () {
-                //Här kan vi lägga en laddar icon/gif
-            },
-
-            complete: function () {
-                //kod för att ta bort laddningsiconen efter att data har hämtats.
-            },
-
+            //Kod som körs när xml filen är laddad. 
             success: function (data) {
-                //Kod som körs när xml filen är laddad. 
-
-
                 $(data).find('projekten projekt').each(function () {
 
                     $projektObjekt = {
