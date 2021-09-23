@@ -10,8 +10,6 @@ $(document).ready(function () {
     $('#nastaProjekt').on('click', function (e) {
         e.preventDefault();
         ritaProjektDiv(klick);
-
-
     });
 
 
@@ -32,8 +30,15 @@ $(document).ready(function () {
         if (x < $projektNr.length) {
             // Ta bort nuvarande projekt
             $('.projektInfo').remove();
-            $('#projekt').prepend('<div class="projektInfo" id=' + $projektNr[x].id + '>');
-            $('#'+$projektNr[x].id).append('<img src="/bilder/projekt/' + $projektNr[x].bild + '" alt="' + $projektNr[x].bild + '"/>');
+            $('#projekt').prepend('<div class="projektInfo" id=' + $projektNr[x].id + '>' +
+                '<div class="projektNamn"><h1 class="projektNamn">' + $projektNr[x].namn + '</h1></div>' +
+                '<div class="projektBild"><img src="/bilder/projekt/' + $projektNr[x].bild + '" alt="' + $projektNr[x].bild + '"/></div>' +
+                '<div class="projektLedare"><p><span class="pHeading">Projektledare: </span>' + $projektNr[x].projektLedare + '</p></div>' +
+                '<div class="uppdragsgivare"><p><span class="pHeading">Uppdragsgivare: </span>' + $projektNr[x].uppdragsGivare + '</p></div>' +
+                '<div class="startDatum"><p><span class="pHeading">Startdatum: </span>' + $projektNr[x].startDatum + '</p></div>' +
+                '<div class="slutDatum"><p><span class="pHeading">Slutdatum: </span>' + $projektNr[x].slutDatum + '</p></div>' +
+                '<div class="projektBeskrivning"><p><span class="pHeading">Projektbeskrivning: </span>' + $projektNr[x].beskrivning + '</p></div>' +
+                '</div>');
             klick++;
         } else {
 
@@ -67,11 +72,8 @@ $(document).ready(function () {
             success: function (data) {
                 //Kod som körs när xml filen är laddad. 
 
-                //Deklarerar variabler som ska hämtas från XML filen
-                var $projektId = '', $projektNamn = '', $projektLedare = '', $uppdragsgivare = '', $startDatum = '', $slutDatum = '', $projektBild = '', $projektBeskrivning = '';
 
-
-                $(data).find('projekten projekt').each(function (index, projekt) {
+                $(data).find('projekten projekt').each(function () {
 
                     $projektObjekt = {
 
