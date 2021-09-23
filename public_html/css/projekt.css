@@ -56,15 +56,14 @@ div.projektInfo img {
         height: auto;
         border:5px solid #000;
         background-color: blueviolet;
+        float:left;
     }
 
     div.projektInfo { 
         background-color: goldenrod;
-        width: 30%;
-        min-height: 700px; /*minsta höjd på rutan för att säkerställa layout */
+        width: 80%;
         height: auto;
         float: left;
-        margin: 3% 0 0 2.5%;
         padding:0;
     
     }
