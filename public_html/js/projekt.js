@@ -39,6 +39,7 @@ $(document).ready(function () {
 
             console.log('nått slutet, börjar om');
             klick = 0;
+            ritaProjektDiv(klick);
         }
 
 
