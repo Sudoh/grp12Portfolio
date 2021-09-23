@@ -19,6 +19,8 @@ $(document).ready(function () {
         if (x < $projektNr.length) {
             // Ta bort nuvarande projekt
             $('.projektInfo').fadeOut();
+
+            //Ritar upp en div för projektet. För att justa utseende, ändra raderna nedan.
             $('#projekt').prepend('<div class="projektInfo" id=' + $projektNr[x].id + '>' +
                 '<div class="projektNamn"><h1 class="projektNamn">' + $projektNr[x].namn + '</h1></div>' +
                 '<div class="projektBild"><img src="/bilder/projekt/' + $projektNr[x].bild + '" alt="' + $projektNr[x].bild + '"/></div>' +
