@@ -29,7 +29,7 @@ $(document).ready(function () {
         //Rita upp projektinfo
         if (x < $projektNr.length) {
             // Ta bort nuvarande projekt
-            $('.projektInfo').remove();
+            $('.projektInfo').fadeOut();
             $('#projekt').prepend('<div class="projektInfo" id=' + $projektNr[x].id + '>' +
                 '<div class="projektNamn"><h1 class="projektNamn">' + $projektNr[x].namn + '</h1></div>' +
                 '<div class="projektBild"><img src="/bilder/projekt/' + $projektNr[x].bild + '" alt="' + $projektNr[x].bild + '"/></div>' +
