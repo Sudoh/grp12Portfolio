@@ -1,0 +1,69 @@
+/*===================================
+-- Emma styles--
+===================================*/
+
+:root{
+    --clr-light: #d6f1ef;
+    --clr-dark: #041f1d;
+    --clr-accent: #39cfc3;
+    --ff-main: 'Source Sans Pro', sans-serif;
+    --ff-second: 'Pacifico', cursive;
+  
+    
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--clr-dark)
+}
+
+.outer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "profile skills"
+        "info skills";
+}
+
+.profile{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--clr-light);
+    grid-area: profile;
+
+    
+}
+.contact-list{
+    align-self: center;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: var(--ff-main);
+    margin-left: 0.5rem;
+    list-style: inside;
+}
+
+
+.about-me{
+    background-color: var(--clr-light);
+    font-family: var(--ff-main);
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    grid-area: info;
+    
+}
+
+.skills{
+    background-color: var(--clr-light);
+    margin-left: 2rem;
+    grid-area: skills;
+
+}
