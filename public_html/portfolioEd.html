@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/edStyle.css">
+
+  <!-- =====BOX ICONS===== -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <title>PortfolioEd</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav ">
+      <label class="nav__logo">Edvin</label>
+      <label class="nav__toggle" id="nav-toggle">
+        <div class="color__box">
+          <i class='bx bx-menu'></i>
+        </div>
+      </label>
+      <div class="nav__menu container" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="main">
+    <!--===== HOME =====-->
+    <section class="home " id="home">
+      
+      <div class="home__data container">
+        <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Edvin</span><br> Web Designer</h1>
+      </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container container">
+        <div class="about__img">
+          <img src="bilder/members/edvin.jpg" alt="">
+        </div>
+        <div class="about__texts">
+          <h2 class="about__subtitle">I am Edvin</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <p>Name: Edvin Johansson</p>
+            </li>
+            <li class="social__item">
+              <p>Telephone: 087929133</p>
+            </li>
+            <li class="social__item">
+              <p>Email: edvinjjj@outlook.com</p>
+            </li>
+          </ul>
+          <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis adipisci suscipit obcaecati optio repellat, maiores at.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills__container container">
+        <div>
+          <h2 class="skills__subtitle">Profesional Skills</h2>
+
+          <div class="skills__data">
+            <p>HTML</p>
+            <div class="skills__bar">
+              <div class="progress__bar">
+                <span>80%</span>
+              </div>
+            </div>
+
+            <p>CSS</p>
+            <div class="skills__bar">
+              <div class="progress__bar">
+                <span>65%</span>
+              </div>
+            </div>
+
+            <p>JAVASCRIPT</p>
+            <div class="skills__bar">
+              <div class="progress__bar">
+                <span>50%</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact__container container">
+        <div class="contact__box">
+          <form id="contact-form" class="contact__form">
+            <h2 class="section-title">Contact Me</h2>
+            <input type="text" id="inpName" class="field" placeholder="Your Name">
+            <div class="error hide">Name is required and <br> must be longer than 3 letters</div>
+            <input type="email" id="inpEmail" class="field" placeholder="Your Email">
+            <div class="error hide">Email is invalid</div>
+            <input type="text" id="inpPhone" class="field" placeholder="Your Phone">
+            <div class="error hide">Phone is invalid</div>
+            <textarea id="inpText" class="field" placeholder="Message"></textarea>
+            <div class="error hide">Message is required and <br> must be longer than 3 letters</div>
+            
+            <button type="submit" class="contact__button">Send</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    
+    <div class="footer__social">
+      <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+      
+    </div>
+    <p>&#169; 2020 copyright all right reserved</p>
+  </footer>
+  
+  <script src="js/appEd.js"></script>
+</body>
+
+</html>
