@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/projekt.css" />
+    
+    <title>Document</title>
+</head>
+<body>
+
+   <header>
+       <nav style="width: 100%; height: 5vw; background-color: #DDD; margin-bottom: 5vw;">
+        <ul style="width:100%; height: 5vw; float:right; text-align: right; padding-right: 5vw;">
+            <li style="display: inline;"><a href="TEST_ajax_html_load.html" class="current">Hem</a></li>
+            <li style="display: inline;"><a href="projekt.html">Projekt</a></li>
+            <li style="display: inline;"><a href="MALLpersonligProfilSida.html">Kontakta oss</a></li>
+        </ul>
+       </nav>
+   </header> 
+
+    <div id="container">
+
+        <div id="content">
+
+
+        </div>
+
+    </div> <!-- stänger container -->
+    
+    <script>
+        $('nav a').on('click', function(e) {
+            e.preventDefault();
+            var url = this.href;
+            console.log(url);
+
+            $('nav a.current').removeClass('current');
+            $(this).addClass('current');
+
+            $('#content').hide();
+            $('#container').load(url + ' #content').hide().fadeIn(500);
+        });      
+
+
+}
+
+
+    </script>
+
+</body>
+</html>

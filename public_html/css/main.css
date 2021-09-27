@@ -1,1 +1,68 @@
 /* Grupp 12 CSS */
+/* START Kontakta oss */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div.subCategory {
+    width: 90%;
+    height: auto;
+    padding: 0;
+    margin: 1em;
+    max-width: 768px;
+    float: left;
+
+}
+
+img.profilBild {
+    width: 100%;
+}
+
+
+.skill {
+    width: 100%;
+    height: auto;
+    margin: 0em 0em 1em 0em;
+    background-color: #ddd;
+
+}
+
+.skill p {
+    text-align: left;
+    color: white;
+    width: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.html {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.sql {
+    width: 60%;
+    background-color: #808080;
+}
+
+.java {
+    width: 60%;
+    background-color: #804380;
+}
+
+/* SLUT Kontakta oss */
