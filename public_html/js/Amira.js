@@ -14,6 +14,6 @@ $(document).ready(function () {
 
     // Change Background Image Ur1
     portfolioSida.style.backgroundImage =
-      'url("images2/' + imgsArray[randomNumber] + '")';
+      'url("../bilder/index-images' + imgsArray[randomNumber] + '")';
   }, 10000);
 });
