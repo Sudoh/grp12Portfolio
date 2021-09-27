@@ -1,9 +1,76 @@
-body {
-  font-family: "Open Sans", "sans-serif";
+:root{
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+
+/*===== Colors =====*/
+:root{
+  --first-color: #d4d80f;
+  --second-color: #105224;
+}
+
+/*===== Typography =====*/
+:root{
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*===== Margins =====*/
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/*===== z index =====*/
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+h1,h2,p{
+  margin: 0;
+}
+ul{
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* start landing page */
@@ -212,69 +279,7 @@ label #btn, label #cancel, #check{
     margin-left: 20px;
   }
   /* end features */
-  .header-area .links {
-  position: fixed;
-    top: 40px;
-    right: 0px ;
-    background-color: #262626;
-    width: 80px;
-    height: 35%;
-    transition: 0.3s;
-    transition: all .5s ease;
-    border-radius: 19px 0px 0px 15px;
-}
-.header-area .links li a{
-display:block;
-height: 100%;
-line-height: 45px;
-font-size: 15px;
-color: beige;
-padding-left: 40px;
-transform: translate(-55%, 0%);
-box-sizing: border-box;
-border-width: 100%;
-border-bottom: 1px solid rgb(255, 255, 255,.1);
-border-bottom: 1px solid black;
-transition: .4s;
-padding-top: 12px;
-}
-
-.links li:hover a {
-  padding-left:50px;
-}
-#check{
-  display: none;
-}
-label #btn, label #cancel{
-  display: inline;
-  position:absolute;
-  cursor:pointer;
-  background-color:#042331;
-  border-radius: 3px;
-}
-label #btn{
-    left:20px;
-    top:38px;
-    font-size: 20px;
-    color:beige;
-    padding: 5px 9px;
-}
-
-label #cansel{
-  z-index:1111;
-  right:195px;
-  top:17px;
-  font-size: 30px;
-  color:beige;
-  padding: 4px 9px;
-
-}
-#check:checked ~ .sidebar{
-right:0px;
-}
-#check:checked ~ label #btn{
-right:0px;
-}
+  
 
 /*===== NAV =====*/
 nav{
@@ -458,4 +463,29 @@ nav .nav__toggle{
   font-size: 1.5rem;
   color: #fff;
   margin: 0 var(--mb-2)
+}
+
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+  .section{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title{
+    margin-bottom: var(--mb-6);
+  }
+  .section-title::after{
+    width: 80px;
+    top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
