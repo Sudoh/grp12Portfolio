@@ -80,11 +80,11 @@ img{
   min-height: 80vh;
   padding: 0;
   margin: 0;
-  background-image: url('../bilder/index-images/01.jpg');
+  background-image: url(../bilder/index-images/01.jpg);
   background-size: 100% auto;
   position: relative;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 10;
 }
 
 .portfolio-sida-a .overlay-a {
@@ -98,7 +98,7 @@ img{
 }
 .header-area-a {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   padding: 10px;
 }
@@ -217,8 +217,11 @@ display: none;
 
 @media (max-width: 991px) {
   .portfolio-sida-a {
+    min-height: 80vh;
     background-size: cover;
     background-position: bottom;
+    transform:translate(0% ,-10%);
+    z-index: 1;
   }
   .introduction-text-a p {
     margin: 20px;
@@ -228,31 +231,34 @@ display: none;
   .introduction-text-a h1 {
     text-transform: uppercase;
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 30px;
   }
   /* start logo */
   .header-area-a .logo-a {
     font-size: 13px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     padding-left: 20px;
     border-left-width: 20px;
   }
   .header-area-a .logo-a span {
     margin: 0;
     padding-left: 25px;
-    z-index: 2;
+    z-index: 10;
   }
   /* End logo */
 
   /* Start features */
   .features-a .box-a {
     width: 22%;
+    height: 80px;
     float: left;
     padding: 0;
     margin-top: 0;
     text-align: center;
+    transform: translate(10%,-50%);
+    
   }
   .features-a .box-a i {
     color: rgb(235, 235, 21);
@@ -263,7 +269,8 @@ display: none;
   }
   .features-a .box-a h3 {
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 9px;
+    font-weight: bold;
     line-height: 10px;
     margin: 8px;
   }
