@@ -429,3 +429,18 @@ nav .nav__toggle{
   }
   
 }
+
+.section-title{
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
