@@ -214,7 +214,7 @@ nav .nav__toggle{
   row-gap: 1rem;
 }
 .home{
-  background-image: url(../bilder/members/cofee.jpeg);
+  background-color: red;
   opacity: 1;
   background-size: cover;
   background-position: right;
