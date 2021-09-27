@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-<iframe src="/projekt.html" style="width: 100%; height: 1000px; border: 0;">
+<!-- <iframe src="/projekt.html" style="width: 100%; height: 200px; border: 0;"> -->
 
 </iframe>
 
@@ -46,6 +46,7 @@
 
             $('#content').hide();
             $('#container').load(url + ' #content').hide().fadeIn(500);
+            $('#container').append($('<script src=js/projekt.js />'));
         });      
     </script>
 
