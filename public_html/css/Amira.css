@@ -79,7 +79,7 @@ img{
   min-height: 80vh;
   padding: 0;
   margin: 0;
-  background-image: url(images2/01.jpg);
+  background-image: url(../bilder/index-images/);
   background-size: 100% auto;
   position: relative;
   background-repeat: no-repeat;
