@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="css/contactUs.css">
+</head>
+
+<body>
+  <div class="contact__container container">
+    <div class="contact__box">
+      <form  id = "contact-form" class="contact__form">
+        <h2>Contact Us</h2>
+        <input type="text" id="inpName" class="field" placeholder="Your Name" >
+        <div class="error hide">Name is required and must be longer than 3 letters</div>
+        <input type="email" id="inpEmail" class="field" placeholder="Your Email" >
+        <div class="error hide">Email is invalid</div>
+        <input type="text" id="inpPhone" class="field" placeholder="Your Phone" >
+        <div class="error hide">Phone is invalid</div>
+        <textarea id="inpText" class="field" placeholder="Message" ></textarea>
+        <div class="error hide">Message must be longer than 3 letters</div>
+        <button type="submit" class="btn">Send</button>
+    </div>
+  </div>
+</body>
+
+<script src="js/contact.js"></script>
+
+
+</html>

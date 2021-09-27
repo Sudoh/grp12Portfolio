@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Logo</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!--About Us-->
+    <section class="aboutUs" id="about-us">
+      <h1 class="section__title">Hi we are <br> webdev</h1>
+
+
+      <div class="aboutUs__container container swiper">
+        <div class="swiper-wrapper">
+          <input type="radio" name="radio__btn" id="radio1">
+          <input type="radio" name="radio__btn" id="radio2">
+          <input type="radio" name="radio__btn" id="radio3">
+          <input type="radio" name="radio__btn" id="radio4">
+          <!--about us 1-->
+          <div class="aboutUs__card swiper-slide first">
+            <img src="bilder/members/discover1.jpg" alt="" class="aboutUs__img">
+            <div class="aboutUs__data">
+              <h2 class="aboutUs__title">Edvin J</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae expedita, facilis ut delectus quod
+                totam dicta, corrupti aliquid a facere culpa quos. Asperiores, pariatur facere? At hic modi veritatis
+                aut!</p>
+              <span class="aboutUs__description">web dev</span>
+            </div>
+          </div>
+
+          <!--about us 2-->
+          <div class="aboutUs__card swiper-slide">
+            <img src="bilder/members/discover2.jpg" alt="" class="aboutUs__img">
+            <div class="aboutUs__data">
+              <h2 class="aboutUs__title">Edvin J2</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae expedita, facilis ut delectus quod
+                totam dicta, corrupti aliquid a facere culpa quos. Asperiores, pariatur facere? At hic modi veritatis
+                aut!</p>
+              <span class="aboutUs__description">web dev</span>
+            </div>
+          </div>
+
+          <!--about us 3-->
+          <div class="aboutUs__card swiper-slide">
+            <img src="bilder/members/discover3.jpg" alt="" class="aboutUs__img">
+            <div class="aboutUs__data">
+              <h2 class="aboutUs__title">Edvin J3</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae expedita, facilis ut delectus quod
+                totam dicta, corrupti aliquid a facere culpa quos. Asperiores, pariatur facere? At hic modi veritatis
+                aut!</p>
+              <span class="aboutUs__description">web dev</span>
+            </div>
+          </div>
+
+          <!--about us 4-->
+          <div class="aboutUs__card swiper-slide">
+            <img src="bilder/members/discover4.jpg" alt="" class="aboutUs__img">
+            <div class="aboutUs__data">
+              <h2 class="aboutUs__title">Edvin J4</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae expedita, facilis ut delectus quod
+                totam dicta, corrupti aliquid a facere culpa quos. Asperiores, pariatur facere? At hic modi veritatis
+                aut!</p>
+              <span class="aboutUs__description">web dev</span>
+            </div>
+          </div>
+
+          <!--auto nav start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <!--auto nav end-->
+          </div>
+          <!--auto nav end-->
+        </div>
+        <!--manual nav start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual nav end-->
+
+      </div>
+      </div>
+    </section>
+
+
+  </main>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 5000);
+  </script>
+
+</body>
+
+</html>
