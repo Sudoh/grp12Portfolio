@@ -22,10 +22,6 @@
         </nav>
     </header>
 
-<iframe src="/projekt.html" style="width: 100%; height: 1000px; border: 0;">
-
-</iframe>
-
     <div id="container">
 
         <div id="content">
@@ -46,6 +42,9 @@
 
             $('#content').hide();
             $('#container').load(url + ' #content').hide().fadeIn(500);
+            //nedan kan vi lägga våran main javascriptfil för hela sidan
+            //Koden nedan laddar in javascript efter att nytt content har laddats in
+            $('#container').append($('<script src=js/projekt.js />'));
         });      
     </script>
 
