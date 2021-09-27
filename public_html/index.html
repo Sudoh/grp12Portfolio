@@ -8,8 +8,8 @@
   <title>Client Project</title>
   <link rel="stylesheet" href="css/Amira.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
-  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
-<link rel="stylesheet" href="css/fonts/all.css">
+  
+<link rel="stylesheet" href="css/css-fonts/all.css">
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   <!--icons-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,15 +21,28 @@
 <body>
   <!-- Start lnding page  -->
   <div class='load'>
-    <div class="portfolio-sida">
+    <div class="portfolio-sida-a">
+      <div class="overlay-a"></div>
       <!-- börjar header-area -->
-      <header class="header-area">
-        <div class="logo">
-          <span>C&S</span> <br>
+      <header class="header-area-a">
+        <div class="logo-a">
+          <span>C&S</span> <br />
           Client Service
         </div>
-        <div class="container">
-          <!--Nav start-->
+        <!-- börjar div container -->
+          <div class="container-a">
+          <button>
+            <i class="fas fa-bars" id="btn-a"></i>
+          </button>
+          <ul class="links-a">
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+         
+        </div>
+         <!-- Slutar div container -->
+          <!-- Nav start
           <nav class="nav ">
             <label class="nav__toggle" id="nav-toggle">
               <div class="color__box">
@@ -45,12 +58,11 @@
             </div>
 
           </nav>
-          <!--Nav End-->
-        </div>
-        <!-- Slutar div container -->
-        <div class="introduction-text">
+          Nav End -->
+       
+        <div class="introduction-text-a">
           <h1 id="ddr">We are <span>Creative</span> grupp</h1>
-          <p id="app">
+          <p id="app-a">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
             voluptate quos <br />ea possimus.Lorem ipsum dolor sit amet
             consectetur adipisicing<br />
@@ -61,9 +73,37 @@
       <!-- slutar header-area -->
     </div>
 
-    <main class="main">
+    <!-- Start Features -->
+    <div class="features-a">
+      <div class="container-a">
+        <div class="box-a">
+          <i class="fa fa-desktop"></i>
+          <h3>Network</h3>
+          <p>Bla Bla Bla</p>
+        </div>
+        <div class="box-a">
+          <i class="fa fa-clone"></i>
+          <h3>Web Desigen</h3>
+          <p>Bla Bla Bla</p>
+        </div>
+        <div class="box-a">
+          <i class="fas fa-comments"></i>
+          <h3>Social Media</h3>
+          <p>Bla Bla Bla</p>
+        </div>
+        <div class="box-a">
+          <i class="fa fa-phone"></i>
+          <h3> Service</h3>
+          
+          <p>Bla Bla Bla</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+  
+    <!-- <main class="main"> -->
       <!-- Start Features -->
-      <section class="features section" id="feature">
+      <!-- <section class="features section" id="feature">
         <div class="features__container container">
           <div class="features">
               <div class="box">
@@ -89,7 +129,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End lnding page  -->
 
       <!--=====  CONTACT =====-->

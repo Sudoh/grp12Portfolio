@@ -75,83 +75,138 @@ img{
 
 /* start landing page */
 
-.portfolio-sida {
+
+.portfolio-sida-a {
   min-height: 80vh;
   padding: 0;
   margin: 0;
-  background-image: url(../bilder/index-images/);
+  background-image: url('../bilder/index-images/01.jpg');
   background-size: 100% auto;
   position: relative;
   background-repeat: no-repeat;
+  z-index: 2;
 }
 
-.portfolio-sida{
-  background-color: green;
+.portfolio-sida-a .overlay-a {
+  background-color: rgba(0, 0, 0, 0.671);
+  position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+  z-index: 1;
 }
-
+.header-area-a {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding: 10px;
+}
 /* start logo */
-.header-area .logo {
+.header-area-a .logo-a {
+  margin-top: 30px;
+  padding: 0px;
+  padding-left: 30px;
   font-weight: bold;
   font-size: 15px;
   color: beige;
+  display: inline-block;
 }
-.header-area .logo span {
+.header-area-a .logo-a span {
   padding: 35px;
 }
 /* End logo */
-
-.introduction-text {
-  color: beige;
-  padding-top: 50px;
-  text-align: center;
+.header-area-a .container-a {
+  width: 88%;
+  text-align: right;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1000;
 }
-.introduction-text span {
+.header-area-a .links-a {
+  list-style: none;
+  padding-left: 50px;
+}
+.header-area-a .links-a li {
+  display: inline-block;
+  width: fit-content;
+  margin-left: 20px;
+}
+.header-area-a .links-a li a {
+  color: beige;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.header-area-a .links-a li a:hover {
   color: rgb(235, 235, 21);
 }
-.introduction-text h1 {
+.header-area-a .menu-a {
+  display: none;
+  /* position: relative; */
+}
+
+.introduction-text-a {
+  color: beige;
+  z-index: 2;
+  position: absolute;
+  padding-top: 50px;
+  transform: translate(-50%, -20%);
+  left: 50%;
+  text-align: center;
+  width: 95%;
+}
+.introduction-text-a span {
+  color: rgb(235, 235, 21);
+}
+.introduction-text-a h1 {
   text-transform: uppercase;
   font-size: 40px;
   padding-top: 100px;
 }
-.introduction-text p {
+.introduction-text-a p {
   font-size: 20px;
   line-height: 1.6em;
+  display: none;
 }
-
+button, #btn-a {
+display: none;
+}
 /* Start features */
-.features {
+.features-a {
+  padding: 25px 0;
+  overflow: hidden;
   line-height: 1em;
 }
-.features .box {
+.features-a .box-a {
   width: 20%;
   float: left;
   padding: 0;
   margin-top: 0;
   text-align: center;
 }
-.features .box:first-child {
+.features-a .box-a:first-child {
   margin-left: 120px;
 }
-.features .box i {
+.features-a .box-a i {
   color: rgb(235, 235, 21);
   border: 2px solid #ccc;
   border-width: 12px;
   border-radius: 100%;
   background-color: #ccc;
 }
-.features .box h3 {
+.features-a .box-a h3 {
   text-transform: uppercase;
+  font-size: 12px;
   padding: 0px;
+  margin: 5px;
 }
-.features .box p {
+.features-a .box-a p {
+  font-size: 10px;
   padding: 0px;
   margin: 0;
 }
-.features .box i:hover {
+.features-a .box-a i:hover {
   background-color: rgb(235, 235, 21);
   border-color: rgb(235, 235, 21);
   color: #ccc;
@@ -161,68 +216,118 @@ img{
 /* mobile version */
 
 @media (max-width: 991px) {
-  .portfolio-sida {
+  .portfolio-sida-a {
     background-size: cover;
     background-position: bottom;
   }
-  .introduction-text p {
+  .introduction-text-a p {
     margin: 20px;
     font-size: 12px;
     line-height: 1.6;
   }
-  .introduction-text h1 {
+  .introduction-text-a h1 {
     text-transform: uppercase;
     font-size: 25px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
   /* start logo */
-  .header-area .logo {
+  .header-area-a .logo-a {
+    font-size: 13px;
     width: 100%;
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left-width: 20px;
   }
-  .header-area .logo span {
+  .header-area-a .logo-a span {
     margin: 0;
+    padding-left: 25px;
+    z-index: 2;
   }
   /* End logo */
 
   /* Start features */
-  .features .box {
+  .features-a .box-a {
     width: 22%;
     float: left;
     padding: 0;
     margin-top: 0;
     text-align: center;
   }
-  .features .box i {
+  .features-a .box-a i {
     color: rgb(235, 235, 21);
     border: 2px solid #ccc;
     border-width: 8px;
     border-radius: 100%;
     background-color: #ccc;
   }
-  .features .box h3 {
+  .features-a .box-a h3 {
     text-transform: uppercase;
     font-size: 8px;
     line-height: 10px;
-    margin:8px;
+    margin: 8px;
   }
-  .features .box p {
+  .features-a .box-a p {
     font-size: 8px;
     line-height: 0px;
   }
-  .features .box i:hover {
+  .features-a .box-a i:hover {
     background-color: rgb(235, 235, 21);
     border-color: rgb(235, 235, 21);
     color: #ccc;
   }
-  .features .box:first-child {
+  .features-a .box-a:first-child {
     margin-left: 20px;
   }
   /* end features */
+
+  .header-area-a .links-a {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    background-color: #262626;
+    width: 80px;
+    height: 35%;
+    transition: 0.3s;
+    transition: all 0.5s ease;
+    border-radius: 10px 0px 0px 15px;
+  }
+  .header-area-a .links-a li a {
+    display: block;
+    height: 100%;
+    line-height: 40px;
+    font-size: 15px;
+    color: beige;
+    padding-left: 40px;
+    transform: translate(-55%, 0%);
+    box-sizing: border-box;
+    border-width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+    padding-top: 20px;
+  }
+
+  .links-a li:hover a {
+    padding-left: 50px;
+  }
+  #btn-a {
+    z-index: 1111;
+    left: 130px;
+    bottom: 8px;
+    font-size: 20px;
+    color: beige;
+    padding: 5px 9px;
+    display:inline-block;
+    position: block;
+    cursor: pointer;
+    background-color: #262626a4;
+    border-radius: 3px;
+  }
 }
 
 /*===== NAV =====*/
-nav{
+/* nav{
   top: 0;
   background-color: rgb(129, 71, 4);
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
@@ -268,7 +373,7 @@ nav .nav__toggle{
   display: none;
   position: absolute;
   
-}
+} */
 
 
 @media screen and (max-width:768px) {
