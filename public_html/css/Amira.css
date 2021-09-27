@@ -83,77 +83,31 @@ img{
   background-size: 100% auto;
   position: relative;
   background-repeat: no-repeat;
-  z-index: 2;
 }
 
-.portfolio-sida .overlay {
-  background-color: rgba(0, 0, 0, 0.671);
-  position: absolute;
+.portfolio-sida{
+  background-color: green;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 1;
 }
-.header-area {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  padding: 10px;
-}
+
 /* start logo */
 .header-area .logo {
-  margin-top: 30px;
-  padding: 0px;
-  padding-left: 30px;
   font-weight: bold;
   font-size: 15px;
   color: beige;
-  display: inline-block;
 }
 .header-area .logo span {
   padding: 35px;
 }
 /* End logo */
-.header-area .container {
-  width: 88%;
-  text-align: right;
-  margin-top: 10px;
-  position: relative;
-  z-index: 1000;
-}
-.header-area .links {
-  list-style: none;
-  padding-left: 50px;
-}
-.header-area .links li {
-  display: inline-block;
-  width: fit-content;
-  margin-left: 20px;
-}
-.header-area .links li a {
-  color: beige;
-  text-decoration: none;
-  transition: 0.1s;
-}
-
-.header-area .links li a:hover {
-  color: rgb(235, 235, 21);
-}
-.header-area .menu{
-  display: none;
-  /* position: relative; */
-}
 
 .introduction-text {
   color: beige;
-  z-index: 2;
-  position: absolute;
   padding-top: 50px;
-  transform: translate(-50%, -20%);
-  left: 50%;
   text-align: center;
-  width: 95%;
 }
 .introduction-text span {
   color: rgb(235, 235, 21);
@@ -166,15 +120,10 @@ img{
 .introduction-text p {
   font-size: 20px;
   line-height: 1.6em;
-  display: none;
 }
-label #btn, label #cancel, #check{
-  display:none;
-}
+
 /* Start features */
 .features {
-  padding: 25px 0;
-  overflow: hidden;
   line-height: 1em;
 }
 .features .box {
@@ -196,12 +145,9 @@ label #btn, label #cancel, #check{
 }
 .features .box h3 {
   text-transform: uppercase;
-  font-size: 12px;
   padding: 0px;
-  margin: 5px;
 }
 .features .box p {
-  font-size: 10px;
   padding: 0px;
   margin: 0;
 }
@@ -232,16 +178,10 @@ label #btn, label #cancel, #check{
   }
   /* start logo */
   .header-area .logo {
-    font-size: 13px;
     width: 100%;
-    margin-top: 40px;
-    padding-left: 20px;
-    border-left-width: 20px;
   }
   .header-area .logo span {
     margin: 0;
-    padding-left: 25px;
-    z-index: 2;
   }
   /* End logo */
 
@@ -279,7 +219,7 @@ label #btn, label #cancel, #check{
     margin-left: 20px;
   }
   /* end features */
-  
+}
 
 /*===== NAV =====*/
 nav{
