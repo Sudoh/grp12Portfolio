@@ -1,18 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Project</title>
+    <link rel="stylesheet" href="master2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+    />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
+    
   </head>
   <body>
-  <div container>
+    <!-- Start lnding page  -->
+  <div class='load'>
+    <div class="portfolio-sida">
+      <div class="overlay"></div>
+      <!-- börjar header-area -->
+      <header class="header-area">
+        <div class="logo">
+          <span>C&S</span> <br />
+          Client Service
+        </div>
+        <!-- börjar div container -->
+        <div class="container">
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label>
+           <!-- <button class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button> -->
+          <ul class="links">
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+         
+        </div>
+        <!-- Slutar div container -->
+        <div class="introduction-text">
+          <h1 id="ddr">We are <span>Creativ</span> grupp</h1>
+          <p id="app">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            voluptate quos <br />ea possimus.Lorem ipsum dolor sit amet
+            consectetur adipisicing<br />
+            elit Ratione voluptate quos ea possimus.
+          </p>
+        </div>
+      </header>
+      <!-- slutar header-area -->
+ </div> 
+    <!-- Start Features -->
 
-
-    
-  </div>
+    <div class="features">
+      <div class="container">
+        <div class="box">
+          <i class="fa fa-desktop"></i>
+          <h3>Network</h3>
+          <p>Bla Bla Bla</p>
+        </div>
+        <div class="box">
+          <i class="fa fa-clone"></i>
+          <h3>Web Desigen</h3>
+          <p>Bla Bla Bla</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-comments"></i>
+          <h3>Social Media</h3>
+          <p>Bla Bla Bla</p>
+        </div>
+        <div class="box">
+          <i class="fa fa-phone"></i>
+          <h3> Service</h3>
+          
+          <p>Bla Bla Bla</p>
+        </div>
+      </div>
+    </div>
+    <!-- End lnding page  -->
+   </class>
+    <script src="js/master.js"></script>
+    </div>
   </body>
+  <!-- End portfolio-sida -->
 </html>
