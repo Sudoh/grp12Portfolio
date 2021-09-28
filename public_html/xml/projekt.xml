@@ -37,7 +37,7 @@
         <uppdragsgivare>Kunden AB</uppdragsgivare>
         <startDatum>2021-01-01</startDatum>
         <slutDatum>2021-01-31</slutDatum>
-        <bildURL id="bild4">projektbild4.png</bildURL>
+        <bildURL id="bild4">projektbild4.jpg</bildURL>
         <projektBeskrivning>Projekt 4 är en projekt om projekt som projekt.</projektBeskrivning>
     </projekt>
 
@@ -47,7 +47,7 @@
         <uppdragsgivare>Sinseri LTD</uppdragsgivare>
         <startDatum>2021-09-30</startDatum>
         <slutDatum>pågående...</slutDatum>
-        <bildURL id="bild5">projektbild5.png</bildURL>
+        <bildURL id="bild5">projektbild5.jpg</bildURL>
         <projektBeskrivning>Vårt senaste projekt som startar i slutet av september.</projektBeskrivning>
     </projekt>
 
