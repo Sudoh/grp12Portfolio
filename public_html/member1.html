@@ -1,48 +1,81 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Special Design</title>
-    <link rel="stylesheet" href="css/master.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Client project</title>
+    <link rel="stylesheet" href="css/personlig.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Ephesis&display=swap" rel="stylesheet">
+
     <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body>
-    <!-- Start lnding page  -->
-    <div class="landing-page">
-      <div class="overlay"></div>
-      <header class="header-area">
-        <div class="logo">
-          <span>S&D</span> <br />
-          Special Design
-        </div>
-        <ul class="links">
-          <li>Home</li>
-          <li>Service</li>
-          <li>Om oss</li>
-          <li>Contact</li>
+    <div class="container">
+      <header class="first-header">
+      <div class="header">
+        <h1>My personal page</h1>
+      </div>
+      <div class="image"></div>
+      <div class="list">
+        <ul class='list-text'>
+          <li>Amira Sawas</li>
+          <li>079999999</li>
+          <li>ameera.sawas@gmail.com</li>
         </ul>
-      </header>
-      <div class="introduction-text">
-        <h1>We are creative grupp</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          voluptate quos ea possimus.
+      </div>
+      <div class="paragraph">
+        <p id="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          laudantium dolorum labore, asperiores fugiat ratione totam vero
+          laborum consequuntur possimus explicabo commodi, vitae voluptatem
+          dolor magnam inventore numquam assumenda. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Magnam sed repellat, atque nam harum
+          porro quis laborum corporis recusandae facilis corrupti nihil deleniti
+          veritatis dolore tenetur tempora assumenda beatae inventore.
         </p>
       </div>
-    </div>
-    <!-- End lnding page  -->
-    
-
-    <script>
-     
-    </script>
+    </header>
+      <!-- start our skills -->
+      <header class="last-header">
+      <div class="skills">
+        <h2>Our Skills</h2>
+        <div class="skill-box">
+          <div class="skill-name">Html</div>
+          <div class="skill-progress progress-red">
+            <span data-progress="90%">90%</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">Css</div>
+          <div class="skill-progress progress-yellowgreen">
+            <span data-progress="80%">80%</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">Js</div>
+          <div class="skill-progress progress-blue">
+            <span data-progress="40%">40%</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">jQuery</div>
+          <div class="skill-progress progress-orchid">
+            <span data-progress="60%">60%</span>
+          </div>
+        </div>
+      </div>
+      <!-- end our skills -->
+    </header>
+    <script src="js/personligt.js"></script>
   </body>
 </html>
