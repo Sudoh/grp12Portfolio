@@ -1,14 +1,13 @@
 body {
   padding: 0px;
   margin: 0px;
-  position: flex;
   height: auto;
   max-width: 100em;
 }
 .container {
   margin: 0;
   padding: 0;
-  height: 46em;
+  min-height: 30em;
   width: 100%;
   background-size: cover;
   background-image: url(../bilder/index-images/josada001.jpg);
