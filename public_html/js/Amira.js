@@ -1,4 +1,4 @@
-/* $(document).ready(function () {
+$(document).ready(function () {
 
   // Apearing tha paragraph
   $("#app").fadeToggle(5000);
@@ -18,7 +18,6 @@
       'url("bilder/index-images/' + imgsArray[randomNumber] + '")';
   }, 2500);
 });
- */
 
 /*Js for contact-form */
 const form = document.getElementById('contact-form')
