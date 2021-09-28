@@ -35,24 +35,23 @@ nav {
 }
 
 /* start logo */
-.header-area-a .logo-a {
+.logo-a {
   margin-top: 30px;
   padding: 0px;
   padding-left: 30px;
   font-weight: bold;
   font-size: 15px;
   color: beige;
-  display: inline-block;
+  float:left;
 }
-.header-area-a .logo-a span {
-  padding: 35px;
-}
+
 /* End logo */
 .header-area-a .container-a {
   width: 88%;
   text-align: right;
   margin-top: 10px;
   position: relative;
+  float:left;
   z-index: 1000;
 }
 .header-area-a .links-a {
