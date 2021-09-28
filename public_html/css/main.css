@@ -348,7 +348,7 @@ button.nastaProjekt {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #000;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
