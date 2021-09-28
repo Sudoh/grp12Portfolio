@@ -34,11 +34,11 @@
     <projekt id="4">
         <namn>Projekt 4</namn>
         <projektLedare>Projektladre Projektsson</projektLedare>
-        <uppdragsgivare>Kunden AB</uppdragsgivare>
+        <uppdragsgivare>Kaffe Kalle AB</uppdragsgivare>
         <startDatum>2021-01-01</startDatum>
         <slutDatum>2021-01-31</slutDatum>
         <bildURL id="bild4">projektbild4.jpg</bildURL>
-        <projektBeskrivning>Projekt 4 är en projekt om projekt som projekt.</projektBeskrivning>
+        <projektBeskrivning>Vi har skapat en hemsida och onlinebeställningsformulär till Kalles cafe.</projektBeskrivning>
     </projekt>
 
     <projekt id="5">
@@ -48,7 +48,7 @@
         <startDatum>2021-09-30</startDatum>
         <slutDatum>pågående...</slutDatum>
         <bildURL id="bild5">projektbild5.jpg</bildURL>
-        <projektBeskrivning>Vårt senaste projekt som startar i slutet av september.</projektBeskrivning>
+        <projektBeskrivning>Vi jobbar just nu med en webshop till Sinseri LTD</projektBeskrivning>
     </projekt>
 
 
