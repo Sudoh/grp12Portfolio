@@ -50,7 +50,7 @@ body{
 
 .about-backgroundimg{
     position: absolute;
-    background-image: url(bilder/profil/code.jpg);
+    background-image: url(../bilder/profil/code.jpg);
     height:10rem;
     width: 100%;
     background-position: center;
