@@ -151,11 +151,7 @@ button.nastaProjekt {
 /* mobile version */
 
 @media (max-width: 991px) {
-  .portfolio-sida-a {
-    background-size: contain;
-    background-position: bottom;
-    z-index: 1;
-  }
+
   .introduction-text-a p {
     margin: 20px;
     font-size: 12px;
