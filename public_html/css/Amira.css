@@ -145,8 +145,7 @@ button {
 
 @media (max-width: 991px) {
   .portfolio-sida-a {
-    min-height: 80vh;
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
     transform: translate(0%, -10%);
     z-index: 1;
