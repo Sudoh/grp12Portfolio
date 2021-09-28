@@ -63,17 +63,16 @@ body{
 
 .emma-about{
     font-family: var(--ff-main);
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    font-size: 1rem; 
     padding: 0.5rem;
+    margin-bottom: 2rem;
     grid-area: info;
     
 }
 
 .emma-skills{
     width: 100%;
-    
+    margin-left: 1rem;
 }
 
 .skill {
@@ -128,7 +127,7 @@ body{
         "info skills";
     }
     .emma-profile{
-        grid-template-columns: 1fr;
+        grid-template-columns:;
     }
     .emma-img{
         margin-left: 2rem;
@@ -142,8 +141,9 @@ body{
         margin-bottom: 15rem;
     }
     
-    .emma-skill{
+    .emma-skills{
         margin-left: 2rem;
+        margin-top: 5rem;
     }
 
 }
@@ -151,13 +151,14 @@ body{
 @media screen and (min-width:1440px){
     .outer-grid{
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 10% 20px 10%; 
+        grid-template-rows: 0.3fr 0.5fr;
+        margin: 0 10% 0 10%; 
         grid-template-areas:
         "profile skills"
         "info skills";
     }
     .emma-profile{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         
     }
     .skills{
