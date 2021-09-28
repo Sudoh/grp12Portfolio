@@ -1,0 +1,102 @@
+/*===================================
+-- About us / member site styles--
+===================================*/
+
+:root{
+    --clr-light: #d6f1ef;
+    --clr-dark: #041f1d;
+    --clr-accent: #39cfc3;
+    --ff-main: 'Source Sans Pro', sans-serif;
+    --ff-second: 'Pacifico', cursive;
+  
+    
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--clr-dark)
+}
+
+.about-mainext{
+    font-family: var(--ff-main);
+    background-color: var(--clr-light);
+    padding: 2rem 5rem 2rem 5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--clr-dark);
+    text-align: center;
+}
+
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 2rem;
+}
+
+.about-container{
+    border-radius: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-backgroundimg{
+    position: absolute;
+    background-image: url(bilder/profil/code.jpg);
+    height:10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.about-profileimg{
+    width: 10rem;
+    clip-path: circle(80px at center);
+    margin-top: 4.5rem;
+    
+}
+
+.about-name{
+    font-size: 2rem;
+    font-family: var(--ff-second);
+}
+
+.about-info{
+    margin: 2rem 5rem;
+    font-size: 1.1rem;
+}
+
+.about-button{
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--clr-accent);
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px){
+    .wrapper-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1440px){
+    .wrapper-grid{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 10% 20px 10%; 
+    }
+}

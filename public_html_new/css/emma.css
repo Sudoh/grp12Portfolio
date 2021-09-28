@@ -1,0 +1,105 @@
+/*===================================
+-- Emma styles--
+===================================*/
+
+:root{
+    --clr-light: #d6f1ef;
+    --clr-dark: #041f1d;
+    --clr-accent: #39cfc3;
+    --ff-main: 'Source Sans Pro', sans-serif;
+    --ff-second: 'Pacifico', cursive;
+  
+    
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--clr-dark)
+}
+
+.outer-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "profile"
+        "info"
+        "skills";
+}
+
+.profile{
+    display:grid;
+    width: 100%;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--clr-light);
+    grid-area: profile;
+
+    
+}
+.contact-list{
+    align-self: center;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: var(--ff-main);
+    margin-left: 0.5rem;
+    list-style: inside;
+    padding-right: 1.6rem;
+}
+
+
+.about-me{
+    background-color: var(--clr-light);
+    font-family: var(--ff-main);
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    grid-area: info;
+    
+}
+
+.skills{
+    background-color: var(--clr-light);
+    grid-area: skills;
+
+}
+
+@media screen and (min-width:800px){
+    .outer-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "profile skills"
+        "info skills";
+    }
+    .profile{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills{
+        margin-left: 2rem;
+    }
+
+}
+
+@media screen and (min-width:1440px){
+    .outer-grid{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 10% 20px 10%; 
+        grid-template-areas:
+        "profile skills"
+        "info skills";
+    }
+    .profile{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .skills{
+        margin-left: 2rem;
+    }
+}

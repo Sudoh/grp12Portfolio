@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Project</title>
+  <link rel="stylesheet" href="css/Amira.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+<link rel="stylesheet" href="css/fonts/all.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!--icons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Start lnding page  -->
+  <div class='load'>
+    <div class="portfolio-sida">
+      <!-- börjar header-area -->
+      <header class="header-area">
+        <div class="logo">
+          <span>C&S</span> <br>
+          Client Service
+        </div>
+        <div class="container">
+          <!--Nav start-->
+          <nav class="nav ">
+            <label class="nav__toggle" id="nav-toggle">
+              <div class="color__box">
+                <i class='bx bx-menu'></i>
+              </div>
+            </label>
+            <div class="nav__menu container" id="nav-menu">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#feature" class="nav__link active">Feature</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+              </ul>
+            </div>
+
+          </nav>
+          <!--Nav End-->
+        </div>
+        <!-- Slutar div container -->
+        <div class="introduction-text">
+          <h1 id="ddr">We are <span>Creative</span> grupp</h1>
+          <p id="app">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            voluptate quos <br />ea possimus.Lorem ipsum dolor sit amet
+            consectetur adipisicing<br />
+            elit Ratione voluptate quos ea possimus.
+          </p>
+        </div>
+      </header>
+      <!-- slutar header-area -->
+    </div>
+
+    <main class="main">
+      <!-- Start Features -->
+      <section class="features section" id="feature">
+        <div class="features__container container">
+          <div class="features">
+              <div class="box">
+                <i class="fa fa-desktop"></i>
+                <h3>Network</h3>
+                <p>Bla Bla Bla</p>
+              </div>
+              <div class="box">
+                <i class="fa fa-clone"></i>
+                <h3>Web Desigen</h3>
+                <p>Bla Bla Bla</p>
+              </div>
+              <div class="box">
+                <i class="fas fa-comments"></i>
+                <h3>Social Media</h3>
+                <p>Bla Bla Bla</p>
+              </div>
+              <div class="box">
+                <i class="fa fa-phone"></i>
+                <h3> Service</h3>
+                <p>Bla Bla Bla</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End lnding page  -->
+
+      <!--=====  CONTACT =====-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container">
+          <div class="contact__box">
+            <form id="contact-form" class="contact__form">
+              <h2 class="section-title">Contact Me</h2>
+              <input type="text" id="inpName" class="field" placeholder="Your Name">
+              <div class="error hide">Name is required and <br> must be longer than 3 letters</div>
+              <input type="email" id="inpEmail" class="field" placeholder="Your Email">
+              <div class="error hide">Email is invalid</div>
+              <input type="text" id="inpPhone" class="field" placeholder="Your Phone">
+              <div class="error hide">Phone is invalid</div>
+              <textarea id="inpText" class="field" placeholder="Message"></textarea>
+              <div class="error hide">Message is required and <br> must be longer than 3 letters</div>
+
+              <button type="submit" class="contact__button">Send</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+
+      </div>
+      <p>&#169; 2020 copyright all right reserved</p>
+    </footer>
+
+    <script src="js/Amira.js"></script>
+  </div>
+</body>
+<!-- End portfolio-sida -->
+
+</html>
