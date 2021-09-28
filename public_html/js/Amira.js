@@ -17,7 +17,7 @@ $(document).ready(function () {
     portfolioSida.style.backgroundImage = 
       'url("bilder/index-images/' + imgsArray[randomNumber] + '")';
   }, 2500);
-});
+
 
 /*Js for contact-form */
 const form = document.getElementById('contact-form')
@@ -104,4 +104,11 @@ const navbarLinks = document.getElementsByClassName('nav__list')[0]
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('show')
-})
+});
+
+
+
+
+});
+
+

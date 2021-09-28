@@ -40,8 +40,8 @@
 
         case 'kontaktLink':
         
-          // $('#content').append($('<script src=js/appEd.js />'));
-          // $('#content').append($('<script src=js/Amira.js />'));
+          $('#content').append($('<script src=js/appEd.js />'));
+          $('#content').append($('<script src=js/Amira.js />'));
 
           break;
 
