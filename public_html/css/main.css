@@ -518,3 +518,104 @@ img.profilBild {
 }
 
 /* SLUT Kontakta oss */
+
+/*===== NAV =====*/
+nav{
+  top: 0;
+  background-color: rgb(129, 71, 4);
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 var(--mb-2);
+  
+}
+
+nav a{
+  font-size: 1rem;
+  color: rgb(59, 185, 1);
+  text-transform: uppercase;
+  margin-right: var(--mb-);
+
+}
+
+label.nav__logo{
+  font-size: 35px;
+  font-weight: bold;
+  color: yellow;
+  padding: 0 2rem;
+  line-height: 5rem;
+}
+
+a:hover{
+  transition: .5s;
+  color: red;
+}
+
+nav .nav__toggle{
+  color: yellow;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  
+}
+
+
+@media screen and (max-width:768px) {
+  label.nav__logo{
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+  nav ul{
+    margin-right: 2rem;
+  }
+  nav a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  nav .nav__toggle{
+    display: block;  
+    position: fixed;
+    z-index: var(2000);
+    top: 0;
+    left: .5rem;
+    
+  }
+  nav li{
+    display: block;
+    color: rgb(78, 13, 13);
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  a:hover{
+    border: none;
+    color: rgba(200, 97, 0, 0.911);
+  }
+  nav ul{
+    position: fixed;
+    z-index: var(--z-fixed);
+    left: -100%;
+    text-align: center;
+    width: 100%;
+    top: 8rem;
+    background-color: rgb(18, 77, 18);
+    opacity: 0.8;
+    transition: all 0.5s;
+  }
+  nav ul.show{
+    left: 0;
+  }
+}
