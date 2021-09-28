@@ -24,6 +24,10 @@ body{
     color: var(--clr-dark)
 }
 
+/*===================================
+-- "header" --
+===================================*/
+
 .about-mainext{
     font-family: var(--ff-main);
     background-color: var(--clr-light);
@@ -34,6 +38,10 @@ body{
     text-align: center;
 }
 
+/*===================================
+-- Yttre grid --
+===================================*/
+
 .wrapper-grid{
     display: grid;
     grid-template-columns: minmax(300px, 1fr);
@@ -41,6 +49,10 @@ body{
     grid-gap: 2rem;
     margin: 2rem;
 }
+
+/*===================================
+-- Medlemsrutorna --
+===================================*/
 
 .about-container{
     border-radius: 1.5rem;
@@ -88,6 +100,10 @@ body{
     cursor: pointer;
 }
 
+/*===================================
+-- footer --
+===================================*/
+
 .about-footer{
     font-family: var(--ff-main);
     background-color: var(--clr-light);
@@ -99,6 +115,10 @@ body{
     text-align: center;
 
 }
+
+/*===================================
+-- Breakpoints --
+===================================*/
 
 @media screen and (min-width:768px){
     .wrapper-grid{
