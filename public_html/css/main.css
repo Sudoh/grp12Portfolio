@@ -2,6 +2,17 @@
 
 /* start landing page */
 
+* {
+  margin:0;
+  padding:0;
+}
+
+nav {
+  background-color: #808080;
+  width: 100%;
+  height: 5em;
+}
+
 .portfolio-sida-a {
   min-height: 80vh;
   padding: 0;
@@ -22,31 +33,25 @@
   top: 0;
   z-index: 1;
 }
-.header-area-a {
-  position: relative;
-  z-index: 10;
-  /* display: flex; */
-  padding: 10px;
-}
+
 /* start logo */
-.header-area-a .logo-a {
+.logo-a {
   margin-top: 30px;
   padding: 0px;
   padding-left: 30px;
   font-weight: bold;
   font-size: 15px;
   color: beige;
-  display: inline-block;
+  float:left;
 }
-.header-area-a .logo-a span {
-  padding: 35px;
-}
+
 /* End logo */
 .header-area-a .container-a {
   width: 88%;
   text-align: right;
   margin-top: 10px;
   position: relative;
+  float:left;
   z-index: 1000;
 }
 .header-area-a .links-a {
