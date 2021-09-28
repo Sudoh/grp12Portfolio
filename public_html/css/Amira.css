@@ -348,7 +348,6 @@ button {
   border-radius: 0.5rem;
   outline: none;
   margin-bottom: var(--mb-4);
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 .error {
   color: red;
