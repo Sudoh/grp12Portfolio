@@ -214,7 +214,7 @@ nav .nav__toggle{
   row-gap: 1rem;
 }
 .home{
-  background-color: red;
+  background-color: rgba(255, 255, 0, 0.219);
   opacity: 1;
   background-size: cover;
   background-position: right;
