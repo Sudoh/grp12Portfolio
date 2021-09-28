@@ -4,7 +4,6 @@ $(document).ready(function () {
     var $projektObjekt = {}, $projektNr = [], klick = 0;
 
     //Kör funktion när sidan har laddat.
-    console.log("kör bara");
     laddaProjekt();
 
         //Fångar knappen för att hämsta nästa projekt.

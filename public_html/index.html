@@ -2,119 +2,145 @@
 <html lang="sv">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Project</title>
-  <link rel="stylesheet" href="css/Amira.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-  <!--icons-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
+    <!-- från Amiras amira.html-->
+    <link rel="stylesheet" href="css/Amira.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- SLUT från Amiras amira.html -->
+
+
+    <!-- från Emmas aboutgrp12.html -->
+    <link rel="stylesheet" href="css/aboutGrp12.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- SLUT från Emmas aboutgrp12.html -->
+
+
+    <title>Grupp 12 Portfolio</title>
 </head>
 
 <body>
-  <!-- Start lnding page  -->
-  
-    <div class="portfolio-sida-a">
-      <div class="overlay-a"></div>
-      <!-- börjar header-area -->
-      <header class="header-area-a">
-        <div class="logo-a">
-          <span>C&S</span> <br />
-          Client Service
-        </div>
-        <!-- börjar div container -->
-          <div class="container-a">
-          <button>
-            <i class="fas fa-bars" id="btn-a"></i>
-          </button>
-          <ul class="links-a">
-            <li><a href="#">Project</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-         
-        </div>
-      
-        <div class="introduction-text-a">
-          <h1 id="ddr">We are <span>Creative</span> grupp</h1>
-          <p id="app-a">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            voluptate quos ea possimus.<br /> Lorem ipsum dolor sit amet
-            consectetur adipisicing
-            elit Ratione<br /> voluptate quos ea possimus.
-          </p>
-        </div>
-      </header>
-      <!-- slutar header-area -->
-    </div>
 
-    <!-- Start Features -->
-    <div class="features-a">
-      <div class="container-a">
-        <div class="box-a">
-        <i class='bx bx-desktop'></i>
-          <h3>Network</h3>
-          <p>Bla Bla Bla</p>
+    <!-- börjar header-area -->
+    <header class="header-area">
+        <div class="logo">
+            <span>C&S</span> <br>
+            Client Service
         </div>
-        <div class="box-a">
-          <i class='bx bxs-image'></i>
-          <h3>Web Desigen</h3>
-          <p>Bla Bla Bla</p>
-        </div>
-        <div class="box-a">
-         <i class='bx bxs-message-rounded-dots'></i>
-          <h3>Social Media</h3>
-          <p>Bla Bla Bla</p>
-        </div>
-        <div class="box-a">
-       <i class='bx bx-phone-incoming'></i>
-          <h3> Service</h3>
-          
-          <p>Bla Bla Bla</p>
-        </div>
-      </div>
-    <!-- End Features -->
-  
-      <!--=====  CONTACT =====-->
-      <section class="contact section" id="contact">
-        <div class="contact__container container">
-          <div class="contact__box">
-            <form id="contact-form" class="contact__form">
-              <h2 class="section-title">Contact Me</h2>
-              <input type="text" id="inpName" class="field" placeholder="Your Name">
-              <div class="error hide">Name is required and <br> must be longer than 3 letters</div>
-              <input type="email" id="inpEmail" class="field" placeholder="Your Email">
-              <div class="error hide">Email is invalid</div>
-              <input type="text" id="inpPhone" class="field" placeholder="Your Phone">
-              <div class="error hide">Phone is invalid</div>
-              <textarea id="inpText" class="field" placeholder="Message"></textarea>
-              <div class="error hide">Message is required and <br> must be longer than 3 letters</div>
+        <!--Nav start-->
+        <nav class="nav">
+            <label class="nav__toggle" id="nav-toggle">
+                <div class="color__box">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <div class="nav__menu container" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="start.html" id="startLink" class="nav__link active">Start</a></li>
+                    <li class="nav__item"><a href="projekt.html" id="projektLink" class="nav__link">Projekten</a></li>
+                    <li class="nav__item"><a href="om_oss.html" id="omOssLink" class="nav__link">Om Oss</a></li>
+                    <li class="nav__item"><a href="kontakt.html" id="kontaktLink" class="nav__link">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Nav End-->
 
-              <button type="submit" class="contact__button">Send</button>
-          </div>
-        </div>
-      </section>
-    </main>
+
+    </header>
+    <!-- slutar header-area -->
+  
+    <!-- Här sker det magiska, låt det vara -->
+    <main>
+        <div id="container">
+
+            <div id="content">
+
+            </div>
+
+        </div> <!-- stänger container -->
+
+    </main> 
+
     <!--===== FOOTER =====-->
     <footer class="footer">
 
-      <div class="footer__social">
-        <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-        <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-        <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
 
-      </div>
-      <p>&#169; 2020 copyright all right reserved</p>
+        </div>
+        <p>&#169; 2020 copyright all right reserved</p>
     </footer>
 
-    <script src="js/Amira.js"></script>
-  </div>
+    <script>
+        
+        //Laddar med start.html på en gång så att det inte blir en tom sida
+        $('#container').load('start.html' + ' #content').hide().fadeIn(500);
+        $('#content').append($('<script src=js/Amira.js />'));
+
+        $('nav a').on('click', function (e) {
+            e.preventDefault();
+            var id = this.id;
+            var url = this.href;
+
+            console.log(this.href);
+
+            $('nav a.current').removeClass('current');
+            $(this).addClass('current');
+
+            $('#content').hide();
+            $('#container').load(url + ' #content').hide().fadeIn(500);
+
+            switch (id) {
+
+                case 'startLink':
+
+
+                    $('#content').append($('<script src=js/Amira.js />'));
+                    console.log("lägger till amira js");
+
+                    break;
+
+                case 'projektLink':
+
+                    console.log("lägger till projekt js");
+                    $('#content').append($('<script src=js/projekt.js />'));
+
+
+                    break;
+
+                case 'omOssLink':
+
+                    break;
+
+                case 'kontaktLink':
+             
+                console.log("lägger till projekt js");
+                    $('#content').append($('<script src=js/appEd.js />'));
+
+                    break;
+
+                default:
+                    console.log('Något gått fel, kontrollera variabeler och id');
+
+            }
+
+        });
+    </script>
+
 </body>
-<!-- End portfolio-sida -->
 
 </html>
