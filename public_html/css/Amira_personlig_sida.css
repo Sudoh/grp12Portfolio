@@ -3,7 +3,7 @@ body {
   margin: 0px;
   position: flex;
   height: auto;
-  max-width: 100em;
+  max-width: 30em;
   background-size: cover;
   background-image: url(../bilder/index-images/josada001.jpg);
   background-repeat: no-repeat;
