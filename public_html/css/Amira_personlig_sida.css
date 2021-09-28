@@ -1,13 +1,14 @@
 body {
   padding: 0px;
   margin: 0px;
+  position: flex;
   height: auto;
   max-width: 100em;
 }
 .container {
   margin: 0;
   padding: 0;
-  min-height: 30em;
+  height: 46em;
   width: 100%;
   background-size: cover;
   background-image: url(../bilder/index-images/josada001.jpg);
@@ -192,7 +193,7 @@ h2:hover {
     left: 17px;
     width: 38vw;
     height: 30vw;
-    background-image: url("../bilder/index-images/largg.jpg");
+    background-image: url("images2/largg.jpg");
     background-size: cover;
     border-width: 2px;
     border-style: solid;
