@@ -7,12 +7,6 @@
   padding:0;
 }
 
-nav {
-  background-color: #808080;
-  width: 100%;
-  height: 5em;
-}
-
 .portfolio-sida-a {
   min-height: 80vh;
   padding: 0;
@@ -109,7 +103,7 @@ button {
 
 button.nastaProjekt {
   background-color: bisque;
-  border:1px solid #000;
+  border:1px solid rgb(37, 16, 16);
   width: 100%;
   height: 2.5em;
 
@@ -296,7 +290,7 @@ button.nastaProjekt {
     display: block;
     position: fixed;
     z-index: var(2000);
-    top: 0;
+    top: 1110;
     left: 0.5rem;
   }
   nav li {
