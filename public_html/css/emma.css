@@ -27,7 +27,7 @@ body{
 .outer-grid{
     display: grid;
     background-image: url(../bilder/profil/code.jpg);
-    grid-template-rows: 0.8fr 0.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
     grid-template-areas:
         "profile"
         "info"
@@ -48,7 +48,8 @@ body{
     border: 2px solid var(--clr-accent);
     position: relative;
     padding: 0.5em;
-    margin: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 .emma-contact{
     align-self: center;
@@ -70,73 +71,73 @@ body{
     
 }
 
-.skills {
-    background: none;
-    width: 100%;
+.skill {
+    width: 90%;
     height: auto;
-    position: relative;
-    display:none;
+    align-self: top;
+    margin: 2rem;
     grid-area: skills;
-  }
- 
-  .skills .skill-box {
-    background-color: rgba(214, 197, 197, 0.301);
-    display: flex;
-    padding: 14px;
-    margin-left: 19px;
-    margin-bottom: 30px;
-    margin-right: 8px;
-    line-height: 20px;
-  }
-  .skills .skill-name {
-    font-weight: bold;
-    width: 130px;
-    text-align: center;
-    padding-right: 10px;
-    color: rgb(20, 19, 19);
-  }
-  .skills .skill-progress {
-    height: 20px;
-    width: 100%;
-    background-color: whitesmoke;
-    border-radius: 6px;
-    position: relative;
-    padding-left: 20px;
-    overflow: hidden;
-  }
-  .skill-progress span {
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #f00;
-    transition: all 0.5s;
-    text-align: center;
-    font-weight: bold;
-  }
-  .progress-yellowgreen span {
-    background-color: yellowgreen;
-  }
-  .progress-blue span {
-    background-color: blue;
-  }
-  .progress-orchid span {
-    background-color: orchid;
-  }
-  
-@media screen and (min-width:760px){
+}
+
+.skill p {
+    text-align: left;
+    color: white;
+    width: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.html {
+    width: 85%;
+    background-color: #04AA6D;
+}
+
+.css {
+    width: 90%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 50%;
+    background-color: #f44336;
+}
+
+.sql {
+    width: 40%;
+    background-color: #b1acac;
+}
+
+.java {
+    width: 75%;
+    background-color: #e2ee3e;
+}
+@media screen and (min-width:768px){
     .outer-grid{
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
         "profile skills"
         "info skills";
     }
     .emma-profile{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
-    .skills{
+    .emma-img{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .emma-contact{
+        margin-left: 2rem
+    }
+    .emma-about{
+        margin:2rem;
+        margin-bottom: 15rem;
+    }
+    
+    .emma-skill{
         margin-left: 2rem;
     }
 
