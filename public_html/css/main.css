@@ -74,9 +74,7 @@
 .introduction-text {
   color: beige;
   z-index: 2;
-  position: absolute;
   padding-top: 50px;
-  transform: translate(-50%, -20%);
   left: 50%;
   text-align: center;
   width: 95%;
@@ -156,7 +154,6 @@ button.nastaProjekt {
   .portfolio-sida-a {
     background-size: contain;
     background-position: bottom;
-    transform: translate(0%, -10%);
     z-index: 1;
   }
   .introduction-text-a p {
@@ -285,42 +282,7 @@ button.nastaProjekt {
   }
 }
 
-@media screen and (max-width: 480px) {
-  nav .nav__toggle {
-    display: block;
-    position: fixed;
-    z-index: var(2000);
-    top: 1110;
-    left: 0.5rem;
-  }
-  nav li {
-    display: block;
-    color: rgb(78, 13, 13);
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav a {
-    font-size: 20px;
-  }
-  a:hover {
-    border: none;
-    color: rgba(200, 97, 0, 0.911);
-  }
-  nav ul {
-    position: fixed;
-    z-index: var(--z-fixed);
-    left: -100%;
-    text-align: center;
-    width: 100%;
-    top: 8rem;
-    background-color: rgb(18, 77, 18);
-    opacity: 0.8;
-    transition: all 0.5s;
-  }
-  nav ul.show {
-    left: 0;
-  }
-}
+
 
 /* ===== CONTACT =====*/
 .field {
@@ -438,10 +400,6 @@ button.nastaProjekt {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
-
-
-
-
 
 
 
@@ -600,7 +558,7 @@ nav .nav__toggle{
   }
   nav ul{
     position: fixed;
-    z-index: var(--z-fixed);
+    z-index: 100;
     left: -100%;
     text-align: center;
     width: 100%;
