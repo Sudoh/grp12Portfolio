@@ -3,7 +3,7 @@ body {
   margin: 0px;
   position: flex;
   height: auto;
-  max-width: 20em;
+  max-width: 100em;
   background-size: cover;
   background-image: url(../bilder/index-images/josada001.jpg);
   background-repeat: no-repeat;
@@ -156,16 +156,12 @@ h2:hover {
 
 @media (max-width: 991px) {
 body{
-  position:relative;
-  width:50px;
-max-width: 20em;
- 
+  
 }
   .container {
     padding: 0px;
     margin: 0px;
-min
- 
+    height: 200vw;
   }
   h1 {
     position: relative;

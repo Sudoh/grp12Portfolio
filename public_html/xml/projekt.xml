@@ -32,23 +32,23 @@
     </projekt>
 
     <projekt id="4">
-        <namn>Kalles cafe</namn>
+        <namn>Projekt 4</namn>
         <projektLedare>Projektladre Projektsson</projektLedare>
-        <uppdragsgivare>Kaffe Kalle AB</uppdragsgivare>
+        <uppdragsgivare>Kunden AB</uppdragsgivare>
         <startDatum>2021-01-01</startDatum>
         <slutDatum>2021-01-31</slutDatum>
-        <bildURL id="bild4">projektbild4.jpg</bildURL>
-        <projektBeskrivning>Vi har skapat en hemsida och onlinebeställningsformulär till Kalles cafe.</projektBeskrivning>
+        <bildURL id="bild4">projektbild4.png</bildURL>
+        <projektBeskrivning>Projekt 4 är en projekt om projekt som projekt.</projektBeskrivning>
     </projekt>
 
     <projekt id="5">
-        <namn>Webshop</namn>
+        <namn>Projekt numero 5</namn>
         <projektLedare>Projecto Projextare</projektLedare>
         <uppdragsgivare>Sinseri LTD</uppdragsgivare>
         <startDatum>2021-09-30</startDatum>
         <slutDatum>pågående...</slutDatum>
-        <bildURL id="bild5">projektbild5.jpg</bildURL>
-        <projektBeskrivning>Vi jobbar just nu med en webshop till Sinseri LTD</projektBeskrivning>
+        <bildURL id="bild5">projektbild5.png</bildURL>
+        <projektBeskrivning>Vårt senaste projekt som startar i slutet av september.</projektBeskrivning>
     </projekt>
 
 
