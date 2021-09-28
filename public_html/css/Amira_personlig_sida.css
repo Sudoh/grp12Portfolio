@@ -156,12 +156,15 @@ h2:hover {
 
 @media (max-width: 991px) {
 body{
-  
+  position: ;
+
+ 
 }
   .container {
     padding: 0px;
     margin: 0px;
-    height: 200vw;
+
+  width:20em;
   }
   h1 {
     position: relative;
