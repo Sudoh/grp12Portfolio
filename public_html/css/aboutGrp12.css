@@ -3,9 +3,9 @@
 ===================================*/
 
 :root{
-    --clr-light: #d6f1ef;
-    --clr-dark: #041f1d;
-    --clr-accent: #39cfc3;
+    --clr-light: rgb(237, 238, 195);
+    --clr-dark: rgb(37, 16, 16);
+    --clr-accent: rgb(235, 235, 21);
     --ff-main: 'Source Sans Pro', sans-serif;
     --ff-second: 'Pacifico', cursive;
   
