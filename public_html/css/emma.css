@@ -24,6 +24,10 @@ body{
     color: var(--clr-light)
 }
 
+/*===================================
+-- yttre grid för innehållet--
+===================================*/
+
 .outer-grid{
     display: grid;
     background-image: url(../bilder/profil/code.jpg);
@@ -33,6 +37,10 @@ body{
         "info"
         "skills";
 }
+
+/*===================================
+-- inre grid för bild och lista--
+===================================*/
 
 .emma-profile{
     display:grid;
@@ -61,6 +69,10 @@ body{
     padding-right: 1.6rem;
 }
 
+/*===================================
+-- info --
+===================================*/
+
 .emma-about{
     font-family: var(--ff-main);
     font-size: 1rem; 
@@ -69,6 +81,10 @@ body{
     grid-area: info;
     
 }
+
+/*===================================
+-- skills --
+===================================*/
 
 .emma-skills{
     width: 100%;
@@ -118,6 +134,11 @@ body{
     width: 75%;
     background-color: #e2ee3e;
 }
+
+/*===================================
+-- breakpoints för större skärmar--
+===================================*/
+
 @media screen and (min-width:768px){
     .outer-grid{
         grid-template-columns: repeat(2, 1fr);
