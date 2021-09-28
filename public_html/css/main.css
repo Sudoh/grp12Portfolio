@@ -2,6 +2,17 @@
 
 /* start landing page */
 
+* {
+  margin:0;
+  padding:0;
+}
+
+nav {
+  background-color: #808080;
+  width: 100%;
+  height: 5em;
+}
+
 .portfolio-sida-a {
   min-height: 80vh;
   padding: 0;
@@ -22,12 +33,7 @@
   top: 0;
   z-index: 1;
 }
-.header-area-a {
-  position: relative;
-  z-index: 10;
-  /* display: flex; */
-  padding: 10px;
-}
+
 /* start logo */
 .header-area-a .logo-a {
   margin-top: 30px;
