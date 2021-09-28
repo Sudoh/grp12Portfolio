@@ -1,0 +1,289 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  position: flex;
+  height: auto;
+  max-width: 100em;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  height: 46em;
+  width: 100%;
+  background-size: cover;
+  background-image: url(images2/josada001.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 25px;
+}
+
+.header {
+  position: relative;
+  left: 40vw;
+  top: 20px;
+  background: none;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+h1 {
+  position: relative;
+  color: beige;
+  font-size: 35px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+}
+.list {
+  position: relative;
+  bottom: 8em;
+  left: 14em;
+  width: 21vw;
+  height: 9vw;
+  background: none;
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.6em;
+  color: whitesmoke;
+  font-family: "Caveat", cursive;
+  display: none;
+}
+
+.image {
+  position: relative;
+  top: 1em;
+  left: 4em;
+  width: 15vw;
+  height: 15vw;
+  background-image: url("images2/largg.jpg");
+  background-size: cover;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: black black black black;
+}
+.paragraph {
+  height: 14vw;
+  width: 50vw;
+  background: none;
+  position: relative;
+  transform: translate(5%, -20%);
+  display: none;
+}
+
+#lorem {
+  text-align: center;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0px;
+  font-size: 27px;
+  line-height: 1.3em;
+  font-family: "Caveat", cursive;
+}
+
+/* start skills */
+.skills {
+  background: none;
+  width: 40vw;
+  height: 35vw;
+  position: relative;
+  left: 57vw;
+  bottom: 35em;
+  display: none;
+}
+.skills h2 {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration-line: underline;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  color: whitesmoke;
+  font-family: "Caveat", cursive;
+}
+
+h1:hover,
+h2:hover {
+  color: chocolate;
+}
+.skills .skill-box {
+  background-color: rgba(214, 197, 197, 0.301);
+  display: flex;
+  padding: 14px;
+  margin-left: 19px;
+  margin-bottom: 30px;
+  margin-right: 8px;
+  line-height: 20px;
+}
+.skills .skill-name {
+  font-weight: bold;
+  width: 130px;
+  text-align: center;
+  padding-right: 10px;
+  color: rgb(20, 19, 19);
+}
+.skills .skill-progress {
+  height: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  position: relative;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.skill-progress span {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #f00;
+  transition: all 0.5s;
+  text-align: center;
+  font-weight: bold;
+}
+.progress-yellowgreen span {
+  background-color: yellowgreen;
+}
+.progress-blue span {
+  background-color: blue;
+}
+.progress-orchid span {
+  background-color: orchid;
+}
+
+/* end skills */
+
+@media (max-width: 991px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    height: 150px;
+    max-width: 100em;
+  }
+  .container {
+    padding: 0px;
+    margin: 0px;
+    height: 260vw;
+  }
+  h1 {
+    position: relative;
+    right: 50px;
+    color: whitesmoke;
+    padding-top: 10px;
+    font-size: 28px;
+  }
+  .list {
+    position: relative;
+    bottom: 80px;
+    left: 170px;
+    width: 180px;
+    height: auto;
+  }
+  .list-text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6em;
+    padding-left: 20px;
+  }
+  .image {
+    position: relative;
+    top: 2em;
+    left: 17px;
+    width: 38vw;
+    height: 30vw;
+    background-image: url("images2/largg.jpg");
+    background-size: cover;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black black black black;
+    border-radius: 13px;
+  }
+  .paragraph {
+    height: auto;
+    width: 90vw;
+    background: none;
+    overflow: hidden;
+    border: none;
+    position: relative;
+    left: 7px;
+    transform: translate(2%, -35%);
+  }
+  #lorem {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  /* start skills */
+
+  .skills {
+    width: 340px;
+    height: 80vw;
+    position: relative;
+    left: 15px;
+    bottom: 70px;
+    border-radius: 20px;
+    display: none;
+  }
+  .skills h2 {
+    font-weight: bold;
+    font-size: 23px;
+    text-decoration-line: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: whitesmoke;
+    position: relative;
+  }
+  .skills .skill-box {
+    background-color: #eee;
+    display: flex;
+    padding: 8px;
+    margin: 0px 8px 20px 10px;
+  }
+  .skills .skill-name {
+    font-weight: bold;
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    padding-right: 10px;
+    color: black;
+  }
+  .skills .skill-progress {
+    height: 19px;
+    width: 100%;
+    background-color: rgba(141, 137, 137, 0.37);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  .skill-progress span {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #f00;
+    transition: all 0.5s;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .progress-yellowgreen span {
+    background-color: yellowgreen;
+  }
+  .progress-blue span {
+    background-color: blue;
+  }
+  .progress-orchid span {
+    background-color: orchid;
+  }
+
+  /* end skills */
+}
