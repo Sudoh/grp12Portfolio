@@ -4,7 +4,7 @@ $(document).ready(function () {
   $("#app").fadeToggle(5000);
 
   // // Select page
-  let portfolioSida = document.querySelector(".portfolio-sida");
+  let portfolioSida = document.querySelector(".portfolio-sida-a");
 
   // Get Array of images;
   let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "05.jpg", "06.jpg"];
