@@ -28,7 +28,7 @@
   left: 0;
   top: 0;
   z-index: 1; */
-} */
+*/
 
 /* start logo */
 .logo-a {
@@ -354,13 +354,10 @@ button.nastaProjekt {
   font-weight: var(--font-semi);
   padding: 2rem 0;
 }
-.footer__social {
-  margin-bottom: var(--mb-4);
-}
+
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 var(--mb-2);
 }
 
 @media screen and (min-width: 768px) {
@@ -370,9 +367,6 @@ button.nastaProjekt {
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
-  }
-  .section-title {
-    margin-bottom: var(--mb-6);
   }
   .section-title::after {
     width: 80px;
@@ -386,22 +380,6 @@ button.nastaProjekt {
     margin-right: auto;
   }
 }
-
-.section-title {
-  position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
-  margin-top: var(--mb-2);
-  margin-bottom: var(--mb-4);
-  text-align: center;
-}
-
-.section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
-
 
 /* START Kontakta oss */
 * {
