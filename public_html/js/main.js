@@ -1,3 +1,5 @@
+
+// SCRIPT FÖR NAVIGATION
 /*Js for toggle-nav */
 const toggleButton = document.getElementsByClassName('nav__toggle')[0]
 const navbarLinks = document.getElementsByClassName('nav__list')[0]
