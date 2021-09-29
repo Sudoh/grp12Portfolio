@@ -26,7 +26,7 @@ document.addEventListener("dblclick", () => {
 
 //Laddar med start.html på en gång så att det inte blir en tom sida
 $('#container').load('start.html' + ' #content').hide().fadeIn(500);
-$('#content').append($('<script src=js/Amira.js />'));
+// $('#content').append($('<script src=js/Amira.js />'));
 
 $('nav a').on('click', function (e) {
   e.preventDefault();
