@@ -569,7 +569,7 @@ nav .nav__toggle{
     left: -100%;
     text-align: center;
     width: 100%;
-    top: 8rem;
+    /* top: 8rem; */
     background-color: rgb(18, 77, 18);
     opacity: 0.8;
     transition: all 0.5s;
