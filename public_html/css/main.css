@@ -96,10 +96,10 @@
   padding-top: 30px;
   line-height: 2em;
 }
-button {
+/* button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
-}
+} */
 
 button.nastaProjekt {
   background-color: rgb(235, 235, 21);
