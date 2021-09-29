@@ -1,4 +1,13 @@
+/*Js for toggle-nav */
+const toggleButton = document.getElementsByClassName('nav__toggle')[0]
+const navbarLinks = document.getElementsByClassName('nav__list')[0]
 
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('show')
+});
+
+    
+    
     //Laddar med start.html på en gång så att det inte blir en tom sida
     $('#container').load('start.html' + ' #content').hide().fadeIn(500);
     $('#content').append($('<script src=js/Amira.js />'));
