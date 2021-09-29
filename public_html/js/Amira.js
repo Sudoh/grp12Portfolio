@@ -94,7 +94,8 @@ form.addEventListener("submit", (e) => {
     });
        
     localStorage.setItem('formData', JSON.stringify(formData));
-    e.preventDefault();    
+    e.preventDefault();
+    alert('Info in local storage');    
   }
 });
 
