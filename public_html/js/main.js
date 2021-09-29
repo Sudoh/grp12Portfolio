@@ -66,7 +66,7 @@ $('nav a').on('click', function (e) {
     case 'kontaktLink':
 
       $('#content').append($('<script src=js/appEd.js />'));
-      $('#content').append($('<script src=js/Amira.js />'));
+      $('#content').append($('<script src=js/kontakt.js />'));
 
       break;
 
