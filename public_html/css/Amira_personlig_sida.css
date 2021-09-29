@@ -1,10 +1,8 @@
 body {
   padding: 0px;
   margin: 0px;
-  position: flex;
-  height: 12em;
-  max-width: 30em;
-  background-size: cover;
+  position: relative;
+  background-size: 100% auto;
   background-image: url(../bilder/index-images/josada001.jpg);
   background-repeat: no-repeat;
 }
@@ -12,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   height: 40em;
-  width: 100%;
+  width: 30em;
   position: relative;
   bottom: 25px;
 }
@@ -20,7 +18,7 @@ body {
 .header {
   position: relative;
   left: 40vw;
-  top: 20px;
+  top: 30px;
   background: none;
   padding-top: 0px;
   margin-top: 0px;
@@ -35,7 +33,7 @@ h1 {
 }
 .list {
   position: relative;
-  bottom: 8em;
+  bottom: 6em;
   left: 14em;
   width: 21vw;
   height: 9vw;
@@ -51,7 +49,7 @@ h1 {
 
 .image {
   position: relative;
-  top: 1em;
+  top: 3em;
   left: 4em;
   width: 15vw;
   height: 15vw;
@@ -66,7 +64,7 @@ h1 {
   width: 50vw;
   background: none;
   position: relative;
-  transform: translate(5%, -20%);
+  transform: translate(1%, -20%);
   display: none;
 }
 
@@ -156,15 +154,10 @@ h2:hover {
 
 @media (max-width: 991px) {
   body {
-    max-width: 5em;
-    background-color: rgb(28, 36, 20);
-    background-image: none;
-    background-position: cover;
+    background-size: cover;
   }
   .container {
-    padding: 0px;
-    max-width: 80em;
-    margin: 0;
+    width: 30px;
   }
   h1 {
     position: relative;
@@ -177,7 +170,7 @@ h2:hover {
   .list {
     position: relative;
     bottom: 80px;
-    left: 190px;
+    left: 180px;
     width: 150px;
     height: auto;
   }
