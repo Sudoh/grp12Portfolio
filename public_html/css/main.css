@@ -20,15 +20,6 @@
   /* z-index: 10; */
 }
 
-/* .portfolio-sida-a .overlay-a {
-  /* background-color: rgba(0, 0, 0, 0.671);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 1; */
-*/
 
 /* start logo */
 .logo-a {
@@ -377,14 +368,16 @@ button.nastaProjekt {
   }
 }
 
-/* START Kontakta oss */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
+/* PERSONLIG SIDA */
+
+body.profilsidan {
+  background-color: #ccc;
+  font-family:'Courier New', Courier, monospace;
 }
 
 div.subCategory {
+  
     width: 90%;
     height: auto;
     padding: 0;
@@ -396,6 +389,8 @@ div.subCategory {
 
 img.profilBild {
     width: 100%;
+    border: 1px solid #000;
+    border-radius: 3em;
 }
 
 
@@ -404,6 +399,7 @@ img.profilBild {
     height: auto;
     margin: 0em 0em 1em 0em;
     background-color: #ddd;
+    border-radius: 0 2em 2em 0 ;
 
 }
 
@@ -415,32 +411,38 @@ img.profilBild {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0 2em 2em 0 ;
 
 }
 
 .html {
     width: 90%;
     background-color: #04AA6D;
+    border-radius: 0 2em 2em 0 ;
 }
 
 .css {
     width: 80%;
     background-color: #2196F3;
+    border-radius: 0 2em 2em 0 ;
 }
 
 .js {
     width: 65%;
     background-color: #f44336;
+    border-radius: 0 2em 2em 0 ;
 }
 
 .sql {
     width: 60%;
     background-color: #808080;
+    border-radius: 0 2em 2em 0 ;
 }
 
 .java {
     width: 60%;
     background-color: #804380;
+    border-radius: 0 2em 2em 0 ;
 }
 
 /* SLUT Kontakta oss */
