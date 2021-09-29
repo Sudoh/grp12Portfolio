@@ -11,27 +11,27 @@ $(document).ready(function () {
   //Variable to Control The Interval
   let backgroundInterval;
 
-  //Swiitch Random Background Option
-  const randomBackground = document.querySelectorAll(
-    ".random-background button"
-  );
+  // //Swiitch Random Background Option
+  // const randomBackground = document.querySelectorAll(
+  //   ".random-background button"
+  // );
 
-  //Loop On All Buttons
-  randomBackground.forEach(buttn => {
-    //Click On All Buttons
-    buttn.addEventListener("click", e => {
-      if (e.target.dataset.background === "yes") {
-        backgroundOption = true;
+  // //Loop On All Buttons
+  // randomBackground.forEach(buttn => {
+  //   //Click On All Buttons
+  //   buttn.addEventListener("click", e => {
+  //     if (e.target.dataset.background === "yes") {
+  //       backgroundOption = true;
 
-        randomizeImgs();
+  //       randomizeImgs();
         
-      } else {
-        backgroundOption = false;
+  //     } else {
+  //       backgroundOption = false;
 
-        clearInterval(backgroundInterval);
-      }
-    });
-  });
+  //       clearInterval(backgroundInterval);
+  //     }
+  //   });
+  // });
 
   // Get Array of images;
   let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "05.jpg", "06.jpg"];
