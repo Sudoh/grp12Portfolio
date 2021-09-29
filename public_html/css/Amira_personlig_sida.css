@@ -2,8 +2,8 @@ body {
   padding: 0px;
   margin: 0px;
   position: flex;
-  height: auto;
-  max-width: 100em;
+  height: 12em;
+  max-width: 30em;
   background-size: cover;
   background-image: url(../bilder/index-images/josada001.jpg);
   background-repeat: no-repeat;
@@ -155,13 +155,16 @@ h2:hover {
 /* end skills */
 
 @media (max-width: 991px) {
-body{
-  
-}
+  body {
+    max-width: 5em;
+    background-color: rgb(28, 36, 20);
+    background-image: none;
+    background-position: cover;
+  }
   .container {
     padding: 0px;
-    margin: 0px;
-    height: 200vw;
+    max-width: 80em;
+    margin: 0;
   }
   h1 {
     position: relative;
@@ -169,12 +172,13 @@ body{
     color: whitesmoke;
     padding-top: 10px;
     font-size: 28px;
+    width: 180px;
   }
   .list {
     position: relative;
     bottom: 80px;
-    left: 170px;
-    width: 180px;
+    left: 190px;
+    width: 150px;
     height: auto;
   }
   .list-text {
@@ -186,20 +190,18 @@ body{
   .image {
     position: relative;
     top: 2em;
-    left: 17px;
+    left: 20px;
     width: 38vw;
     height: 30vw;
- 
   }
   .paragraph {
-    height: auto;
-    width: 90vw;
+    height: 150px;
+    width: 20em;
     background: none;
     overflow: hidden;
     border: none;
     position: relative;
-    left: 7px;
-    transform: translate(2%, -35%);
+    transform: translate(6%, -50%);
   }
   #lorem {
     text-align: center;
@@ -217,7 +219,7 @@ body{
     height: 80vw;
     position: relative;
     left: 15px;
-    bottom: 70px;
+    bottom: 100px;
     border-radius: 20px;
     display: none;
   }
