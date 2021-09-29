@@ -24,6 +24,7 @@ $(document).ready(function () {
         backgroundOption = true;
 
         randomizeImgs();
+        
       } else {
         backgroundOption = false;
 
