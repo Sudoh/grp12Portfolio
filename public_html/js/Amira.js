@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   // Apearing tha paragraph
-  $("#app").fadeToggle(5000);
+  $("#app").fadeIn(1000);
 
   // // Select page
   let portfolioSida = document.querySelector(".portfolio-sida-a");
