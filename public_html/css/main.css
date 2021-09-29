@@ -541,9 +541,7 @@ nav .nav__toggle{
   nav a{
     font-size: 20px;
   }
-}
-
-@media screen and (max-width:480px) {
+  
   nav .nav__toggle{
     display: block;  
     position: fixed;
@@ -576,7 +574,7 @@ nav .nav__toggle{
     opacity: 0.8;
     transition: all 0.5s;
   }
-  nav ul.show{
+  nav ul.show {
     left: 0;
   }
 }
