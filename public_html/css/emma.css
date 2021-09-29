@@ -24,6 +24,7 @@ body{
     color: var(--clr-light)
 }
 
+
 /*===================================
 -- yttre grid --
 ===================================*/
@@ -91,10 +92,15 @@ body{
     width: 100%;
 }
 
+#mySkills{
+    margin-left: 2rem;
+}
+
 .skill {
-    width: 90%;
+    width: 80%;
     height: auto;
     margin: 2rem;
+    background-color: #ddd;
     grid-area: skills;
 }
 
