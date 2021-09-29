@@ -8,30 +8,31 @@ $(document).ready(function () {
   //Random Background Option
   let backgroundOption = true;
 
-  //Variable to Control The Interval
+  //Variable to Control The backgroundInterval
   let backgroundInterval;
 
-  // //Swiitch Random Background Option
-  // const randomBackground = document.querySelectorAll(
-  //   ".random-background button"
-  // );
+  //Switch Random Background Option
+  const randomBackground = document.querySelectorAll(
+    ".random-background button"
+  );
 
-  // //Loop On All Buttons
-  // randomBackground.forEach(buttn => {
-  //   //Click On All Buttons
-  //   buttn.addEventListener("click", e => {
-  //     if (e.target.dataset.background === "yes") {
-  //       backgroundOption = true;
+  //Loop On All Buttons
+  randomBackground.forEach(button => {
+    //Click On All Buttons
+    button.addEventListener("click", e => {
+      if (e.target.dataset.background === "yes") {
 
-  //       randomizeImgs();
         
-  //     } else {
-  //       backgroundOption = false;
+        backgroundOption = true;
 
-  //       clearInterval(backgroundInterval);
-  //     }
-  //   });
-  // });
+        randomizeImgs();
+      } else {
+        backgroundOption = false;
+
+      clearInterval(backgroundInterval);
+       }
+    });
+  });
 
   // Get Array of images;
   let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "05.jpg", "06.jpg"];
@@ -46,7 +47,7 @@ $(document).ready(function () {
         // Change Background Image Ur1
         portfolioSida.style.backgroundImage =
           'url("bilder/index-images/' + imgsArray[randomNumber] + '")';
-      }, 2500);
+      }, 1000);
     }
   }
   randomizeImgs();
