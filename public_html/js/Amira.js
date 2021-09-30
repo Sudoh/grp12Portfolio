@@ -31,6 +31,16 @@ function randomizeImgs() {
 
 }
 
+alreadyOn = true;
+
+if(alreadyOn = true){
+  startButton.disabled = true;  
+}
+else {
+  startButton.enabled = false; 
+}
+
+
 randomizeImgs()
 
 startButton.addEventListener('click', () => {
@@ -43,5 +53,7 @@ stopButton.addEventListener('click', () => {
 
 function myStopFunction() {
   clearTimeout(intervall);
+  alreadyOn = false;
 }
+
 /* }); */
