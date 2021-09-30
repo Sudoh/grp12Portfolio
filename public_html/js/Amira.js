@@ -28,20 +28,10 @@ function randomizeImgs() {
     portfolioSida.style.backgroundImage =
       'url("bilder/index-images/' + imgsArray[randomNumber] + '")';
   }, 1000);
+  startButton.disabled = true; 
+  stopButton.disabled = false; 
 
 }
-
-alreadyOn = true;
-
-if(alreadyOn = true){
-  startButton.disabled = true;  
-}
-else {
-  startButton.enabled = false; 
-}
-
-
-randomizeImgs()
 
 startButton.addEventListener('click', () => {
   randomizeImgs();
@@ -53,7 +43,8 @@ stopButton.addEventListener('click', () => {
 
 function myStopFunction() {
   clearTimeout(intervall);
-  alreadyOn = false;
+  startButton.disabled = false; 
+  stopButton.disabled = true; 
 }
 
 /* }); */
