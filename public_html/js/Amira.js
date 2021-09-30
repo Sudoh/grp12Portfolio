@@ -1,54 +1,47 @@
-$(document).ready(function () {
-  // Apearing tha paragraph
-  $("#p-toggle").fadeIn(10000);
+/* $(document).ready(function () { */
+// Apearing tha paragraph
+$("#p-toggle").fadeIn(10000);
 
-  // // Select page
-  let portfolioSida = document.querySelector(".portfolio-sida-a");
+// // Select page
+let portfolioSida = document.querySelector(".portfolio-sida-a");
+const startButton = document.getElementsByClassName('animationAction')[0];
+const stopButton = document.getElementsByClassName('animationPause')[0];
 
-  //Random Background Option
-  let backgroundOption = true;
+//Switch Random Background Option
+const randomBackground = document.querySelectorAll(
+  ".random-background button"
+);
 
-  //Variable to Control The backgroundInterval
-  let backgroundInterval;
 
-  //Switch Random Background Option
-  const randomBackground = document.querySelectorAll(
-    ".random-background button"
-  );
+let intervall
+// Get Array of images;
+let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "05.jpg", "06.jpg"];
 
-  //Loop On All Buttons
-  randomBackground.forEach(button => {
-    //Click On All Buttons
-    button.addEventListener("click", e => {
-      if (e.target.dataset.background === "yes") {
+// function To Randomize Images
+function randomizeImgs() {
 
-        
-        backgroundOption = true;
+  intervall = setInterval(function () {
+    // Get random Number
+    let randomNumber = Math.floor(Math.random() * imgsArray.length);
 
-        randomizeImgs();
-      } else {
-        backgroundOption = false;
+    // Change Background Image Ur1
+    portfolioSida.style.backgroundImage =
+      'url("bilder/index-images/' + imgsArray[randomNumber] + '")';
+  }, 1000);
 
-      clearInterval(backgroundInterval);
-       }
-    });
-  });
+}
 
-  // Get Array of images;
-  let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "05.jpg", "06.jpg"];
+randomizeImgs()
 
-  // function To Randomize Images
-  function randomizeImgs() {
-    if (backgroundOption === true) {
-      setInterval(function () {
-        // Get random Number
-        let randomNumber = Math.floor(Math.random() * imgsArray.length);
-
-        // Change Background Image Ur1
-        portfolioSida.style.backgroundImage =
-          'url("bilder/index-images/' + imgsArray[randomNumber] + '")';
-      }, 1000);
-    }
-  }
+startButton.addEventListener('click', () => {
   randomizeImgs();
-});
+})
+
+stopButton.addEventListener('click', () => {
+  myStopFunction();
+})
+
+function myStopFunction() {
+  clearTimeout(intervall);
+}
+/* }); */
