@@ -11,8 +11,6 @@ phoneInput.isValid = () => isValidPhone(phoneInput.value);
 messageInput.isValid = () => isValidText(messageInput.value);
 
 
-let isValidationOn = false;
-//validate only on submit
 let isFormValid = false;
 
 const isValidName = (name) =>{
@@ -39,8 +37,6 @@ const isValidText = (text) =>{
 
 const validateInputs = () => {
   
-  if (!isValidationOn) return;
-  //if not on return
 
   isFormValid = true;
   inputFields.forEach((input) => {
@@ -61,7 +57,6 @@ inputFields.forEach((input) => input.addEventListener("input", validateInputs));
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  isValidationOn = true;
   validateInputs();
   if (isFormValid) {
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
