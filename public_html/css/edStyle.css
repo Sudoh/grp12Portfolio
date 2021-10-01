@@ -94,7 +94,7 @@ img{
 
 /*===== LAYOUT =====*/
 .container{
-  max-width: 1024px;
+  max-width: 64rem;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -104,9 +104,9 @@ img{
 nav{
   top: 0;
   background-color: rgb(129, 71, 4);
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  box-shadow: 0 0.25rem 1.563rem rgba(14,36,49,.15);
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 nav ul{
@@ -128,7 +128,7 @@ nav a{
 }
 
 label.nav__logo{
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: bold;
   color: yellow;
   padding: 0 2rem;
@@ -142,7 +142,7 @@ a:hover{
 
 nav .nav__toggle{
   color: yellow;
-  font-size: 40px;
+  font-size: 2.5rem;
   cursor: pointer;
   display: none;
   position: absolute;
@@ -166,7 +166,7 @@ nav .nav__toggle{
     margin-right: 2rem;
   }
   nav a{
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
@@ -182,11 +182,11 @@ nav .nav__toggle{
   nav li{
     display: block;
     color: rgb(78, 13, 13);
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 3.125rem 0;
+    line-height: 1.875rem;
   }
   nav a{
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   a:hover{
     border: none;
@@ -239,7 +239,7 @@ nav .nav__toggle{
 .about__container{
   row-gap: 2rem;
   text-align: center;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 0.25rem 1.563rem rgba(14,36,49,.15);
   padding: 2rem 2rem;
   border-radius: .5rem;
 }
@@ -262,7 +262,7 @@ nav .nav__toggle{
 }
 
 .about__img img{
-  width: 440px;
+  width: 27.5rem;
   border-radius: .5rem;
   float: left;
 }
@@ -274,7 +274,7 @@ nav .nav__toggle{
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 0.25rem 1.563rem rgba(14,36,49,.15);
   margin: auto;
 }
 
@@ -313,7 +313,7 @@ nav .nav__toggle{
   padding: 0.5rem 1rem;
   outline: none;
   border-radius: .5rem;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 0.125rem solid rgba(0, 0, 0, 0);
   background-color: rgba(230, 230, 230, 0.6);
   font-size: 1.1rem;
   transition: .3s;
@@ -329,7 +329,7 @@ nav .nav__toggle{
 }
 
 .area{
-  min-height: 150px;
+  min-height: 9.375rem;
   
 }
 
@@ -342,13 +342,13 @@ nav .nav__toggle{
   border-radius: .5rem;
   outline: none;
   margin-bottom: var(--mb-4);
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 0.25rem 1.563rem rgba(14,36,49,.15);
   
 }
 .error {
   color: red;
-  font-size: 13px;
-  margin: 10px 0;
+  font-size: 0.813rem;
+  margin: 0.625rem 0;
   right: 0;
 }
 
@@ -392,25 +392,25 @@ nav .nav__toggle{
 
 @media screen and (max-width:768px) {
   .about__img img{
-    width: 300px;
+    width: 18.75rem;
   }
   .about__texts{
-    font-size: 15px;
+    font-size: 0.938rem;
   }
 }
 
 @media screen and (max-width:480px) {
   .about__img img{
-    width: 390px;
+    width: 24.375rem;
   }
   .home{
     padding-bottom: 20rem;
   }
   .about__texts{
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .error {
-    font-size: 10px;
+    font-size: 0.625rem;
     
   }
 }
@@ -427,7 +427,7 @@ nav .nav__toggle{
     margin-bottom: var(--mb-6);
   }
   .section-title::after{
-    width: 80px;
+    width: 5rem;
     top: 3rem;
   }
 }
