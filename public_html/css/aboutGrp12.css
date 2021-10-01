@@ -74,7 +74,7 @@ body{
 
 .about-profileimg{
     width: 10rem;
-    clip-path: circle(80px at center);
+    clip-path: circle(5rem at center);
     margin-top: 4.5rem;
 }
 
