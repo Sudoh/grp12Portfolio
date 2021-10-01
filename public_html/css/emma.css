@@ -55,7 +55,7 @@ body{
 }
 
 .emma-img{
-    border: 2px solid var(--clr-accent);
+    border: 0.125rem solid var(--clr-accent);
     position: relative;
     padding: 0.5em;
     margin-left: 1em;
@@ -107,10 +107,10 @@ body{
 .skill p {
     text-align: left;
     color: white;
-    width: 100px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 6.25rem;
+    padding-left: 0.625rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
     background-color: rgba(0, 0, 0, 0.3);
 
 }
