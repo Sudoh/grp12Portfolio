@@ -74,6 +74,24 @@ form.addEventListener("submit", (e) => {
 });
 
 
+/*Js for contact-form to displaydata */
+
+displayData();
+
+function displayData() {
+
+  if (localStorage.getItem("formData") != null){
+
+    let values = JSON.parse(localStorage.getItem("formData"));
+  
+    nameInput.value = values[values.length-1].inpName;
+    emailInput.value = values[values.length-1].inpEmail;
+    phoneInput.value = values[values.length-1].inpPhone;
+    messageInput.value = values[values.length-1].inpText;
+  }
+  
+}
+
 
 
 

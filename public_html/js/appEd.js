@@ -1,10 +1,10 @@
 /*Js for load-bar */
-window.addEventListener('load', () =>{
+window.addEventListener('load', () => {
   let progressBar = document.querySelectorAll('.progress__bar');
   let values = [
     '80%', '65%', '50%'
   ];
-  progressBar.forEach((progress,index) =>{
+  progressBar.forEach((progress, index) => {
     progress.style.width = values[index];
   })
 })
@@ -33,8 +33,8 @@ messageInput.isValid = () => isValidText(messageInput.value);
 
 let isFormValid = false;
 
-const isValidName = (name) =>{
-  if (name.length > 3){
+const isValidName = (name) => {
+  if (name.length > 3) {
     return true;
   }
 }
@@ -49,8 +49,8 @@ const isValidPhone = (phone) => {
   return pattern.test(String(phone).toLowerCase());
 };
 
-const isValidText = (text) =>{
-  if (text.length > 3){
+const isValidText = (text) => {
+  if (text.length > 3) {
     return true;
   }
 }
@@ -77,7 +77,6 @@ inputFields.forEach((input) => input.addEventListener("input", validateInputs));
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
   validateInputs();
   if (isFormValid) {
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
@@ -87,18 +86,36 @@ form.addEventListener("submit", (e) => {
       inpPhone: document.getElementById('inpPhone').value,
       inpText: document.getElementById('inpText').value
     });
-       
+
     localStorage.setItem('formData', JSON.stringify(formData));
-    e.preventDefault();    
+    e.preventDefault();
+    
   }
 });
 
+displayData();
+
+function displayData() {
+
+  if (localStorage.getItem("formData") != null){
+
+    let values = JSON.parse(localStorage.getItem("formData"));
+  
+    nameInput.value = values[values.length-1].inpName;
+    emailInput.value = values[values.length-1].inpEmail;
+    phoneInput.value = values[values.length-1].inpPhone;
+    messageInput.value = values[values.length-1].inpText;
+  }
+  
+}
+
+
 /*Js for Full-Screen */
 
-function toggleFullscreen(){
+function toggleFullscreen() {
   if (getFullscreemElement()) {
     document.exitFullscreen();
-  }else {
+  } else {
     document.documentElement.requestFullscreen.catch(e);
   }
 }
