@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+  
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  
+    <!-- från Amiras amira.html-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- SLUT från Amiras amira.html -->
+  
+  
+    <!-- från Emmas aboutgrp12.html -->
+    <link rel="stylesheet" href="css/aboutGrp12.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet">
+    <!-- SLUT från Emmas aboutgrp12.html -->
+  
+    <link rel="stylesheet" href="css/main.css" />
     <title>Grupp 12 Projekt</title>
 </head>
 
 <body id="body">
+
+    <header class="header-area-a">
+    
+        <nav class="nav">
+          <label class="nav__logo">Grupp 12</label>
+          <label class="nav__toggle" id="nav-toggle"> 
+              <i class='bx bx-menu'></i>
+          </label>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="index.html" id="startLink" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="om_oss.html" id="omOssLink" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="projekt.html" id="projektLink" class="nav__link active">Projects</a></li>
+              <li class="nav__item"><a href="kontakt.html" id="kontaktLink" class="nav__link">Contact</a></li>
+            </ul>
+          </div>
+    
+        </nav>
+        
+      </header>
  
     <div id="content">
 
@@ -27,6 +68,46 @@
 
     </div> <!-- Stänger Content -->
 
-    
+      <!-- Start Features -->
+  <div class="features-a">
+    <div class="container-a">
+      <div class="box-a">
+        <i class='bx bx-desktop'></i>
+        <h3>Network</h3>
+        <p></p>
+      </div>
+      <div class="box-a">
+        <i class='bx bxs-image'></i>
+        <h3>Web Desigen</h3>
+        <p></p>
+      </div>
+      <div class="box-a">
+        <i class='bx bxs-message-rounded-dots'></i>
+        <h3>Social Media</h3>
+        <p></p>
+      </div>
+      <div class="box-a">
+        <i class='bx bx-phone-incoming'></i>
+        <h3> Service</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <!-- End Features -->
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__social">
+          <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+          <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+          <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p>&#169; 2021 copyright all right reserved</p>
+      </footer>
+      <!--===== FOOTER =====-->
+
+    <script src="js/main.js"></script>
+    <script src="js/Amira.js"></script> 
+    <script src="js/projekt.js"></script>
 </body>
 </html>

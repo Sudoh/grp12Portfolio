@@ -73,10 +73,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-
 /*Js for contact-form to displaydata */
-
-displayData();
 
 function displayData() {
 
@@ -92,9 +89,5 @@ function displayData() {
   
 }
 
-
-
-
-
-
+displayData();
 
